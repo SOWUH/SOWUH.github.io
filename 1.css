@@ -68,6 +68,6 @@ img.picex {
 .content {
     box-sizing: content-box;
     padding: 0.7%;
-	display: flex;
-	justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
 }
