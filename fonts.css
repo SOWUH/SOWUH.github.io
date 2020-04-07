@@ -1,0 +1,9 @@
+/* font converted using font-converter.net. thank you! */
+@font-face {
+  font-family: "ClearSans";
+
+  src: url("./fonts/ClearSans-OP0p.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("./fonts/ClearSans-OP0p.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
