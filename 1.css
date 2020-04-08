@@ -149,11 +149,11 @@ img.picex {
   overflow: auto;
 }
 .contentl {
-	display: table-cell;
+    display: table-cell;
     box-sizing: border-box;
     padding: 2%;
-	align: left;
-	width: 47%;
+    align: left;
+    width: 47%;
 }
 .contentr {
 	display: table-cell;
