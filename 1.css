@@ -5,7 +5,7 @@
     height: 1px;
    }
 body{
-font-size: calc(14px + (68 - 14) * ((100vw - 300px) / (8500 - 300)) + 50 * ((100vh - 500px) / (8500 - 500)));
+font-size: calc(16px + 44 * ((100vw - 300px) / (8500 - 300)) + 50 * ((100vh - 500px) / (8500 - 500)));
 line-height: calc(1.2em + (1.5 - 1.2) * ((100vw - 300px) / (10000 - 300)));
 margin-top:0;
 margin-left:0;
@@ -37,7 +37,7 @@ p2 {
 	font-family: ClearSans;
 	color: #def2eb;
 	font-weight: normal;
-	text-shadow: 1em 1em 2em #301e20;
+	text-shadow: -0.05em 0.07em 0.1em black;
 }
 .POLOSKAh{
 background: rgb(191,230,212);
@@ -45,21 +45,21 @@ background: -moz-linear-gradient(90deg, rgba(191,230,212,0.7539390756302521) 0%,
 background: -webkit-linear-gradient(90deg, rgba(191,230,212,0.7539390756302521) 0%, rgba(207,240,226,0.8547794117647058) 25%, rgba(222,242,235,0.9500175070028011) 50%, rgba(207,240,226,0.8519782913165266) 75%, rgba(207,240,226,0.7539390756302521) 100%);
 background: linear-gradient(90deg, rgba(191,230,212,0.7539390756302521) 0%, rgba(207,240,226,0.8547794117647058) 25%, rgba(222,242,235,0.9500175070028011) 50%, rgba(207,240,226,0.8519782913165266) 75%, rgba(207,240,226,0.7539390756302521) 100%);
 filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#bfe6d4",endColorstr="#cff0e2",GradientType=1);
-		width: 48%;
+		width: 46%;
 		height: auto;
 		margin-left:auto;
 		margin-right:auto;
 		margin-top:.7%;
 		min-width: 800px;
-		border: 2px solid #301d23; 
-		outline: 1px solid rgba(255, 255, 255, 0.5);
-		box-shadow: -12px 12px 22px rgba(0,0,0,0.6);
+		border: 0.1em solid #301d23; 
+		outline: 0.06em solid rgba(255, 255, 255, 0.5);
+		box-shadow: -0.43em 0.43em 0.91em rgba(22,0,12,0.7);
 		z-index: 5;
 		position: relative;
 	}
 @media screen and (max-aspect-ratio: 12/16){
 	.POLOSKAh{
-		width: 97%;
+		width: 94%;
 		margin-left:auto;
 		margin-right:auto;
 		min-width: 300px;
@@ -67,7 +67,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#bfe6d4",endCo
 }
 @media (max-width: 805px){
 	.POLOSKAh{
-		width: 97%;
+		width: 94%;
 		margin-left:auto;
 		margin-right:auto;
 		min-width: 300px;
@@ -79,21 +79,21 @@ background: -moz-linear-gradient(90deg, rgba(191,230,212,0.7539390756302521) 0%,
 background: -webkit-linear-gradient(90deg, rgba(191,230,212,0.7539390756302521) 0%, rgba(207,240,226,0.8547794117647058) 25%, rgba(222,242,235,0.9500175070028011) 50%, rgba(207,240,226,0.8519782913165266) 75%, rgba(207,240,226,0.7539390756302521) 100%);
 background: linear-gradient(90deg, rgba(191,230,212,0.7539390756302521) 0%, rgba(207,240,226,0.8547794117647058) 25%, rgba(222,242,235,0.9500175070028011) 50%, rgba(207,240,226,0.8519782913165266) 75%, rgba(207,240,226,0.7539390756302521) 100%);
 filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#bfe6d4",endColorstr="#cff0e2",GradientType=1);
-		width: 48%;
+		width: 46%;
 		height: auto;
 		margin-left:auto;
 		margin-right:auto;
 		min-width: 800px;
-		border: 2px solid #301e20; 
-		outline: 1px solid rgba(255, 255, 255, 0.5);
-		box-shadow: -12px 12px 22px rgba(0,0,0,0.6);
+		border: 0.1em solid #301d23; 
+		outline: 0.06em solid rgba(255, 255, 255, 0.5);
+		box-shadow: -0.43em 0.43em 0.91em rgba(0,0,0,0.7);
 		display: table;
 		z-index: 5;
 		position: relative;
 	}
 @media screen and (max-aspect-ratio: 12/16){
 	.POLOSKA{
-		width: 97%;
+		width: 94%;
 		margin-left:auto;
 		margin-right:auto;
 		min-width: 300px;
@@ -101,7 +101,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#bfe6d4",endCo
 }
 @media (max-width: 805px){
 	.POLOSKA{
-		width: 97%;
+		width: 94%;
 		margin-left:auto;
 		margin-right:auto;
 		min-width: 300px;
@@ -113,7 +113,7 @@ background: -moz-linear-gradient(90deg, rgba(48,30,32,0) 5%, rgba(213,50,119,1) 
 background: -webkit-linear-gradient(90deg, rgba(48,30,32,0) 5%, rgba(213,50,119,1) 50%, rgba(48,30,32,0) 95%);
 background: linear-gradient(90deg, rgba(48,30,32,0) 5%, rgba(213,50,119,1) 50%, rgba(48,30,32,0) 95%);
 filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#301e20",endColorstr="#301e20",GradientType=1);
-		width: 48%;
+		width: 46%;
 		height: auto;
 		margin-left:auto;
 		margin-right:auto;
@@ -124,7 +124,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#301e20",endCo
 	}
 @media screen and (max-aspect-ratio: 12/16){
 	.POLOSKAt{
-		width: 97%;
+		width: 94%;
 		margin-left:auto;
 		margin-right:auto;
 		min-width: 200px;
@@ -132,7 +132,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#301e20",endCo
 }
 @media (max-width: 805px){
 	.POLOSKAt{
-		width: 97%;
+		width: 94%;
 		margin-left:auto;
 		margin-right:auto;
 		min-width: 200px;
