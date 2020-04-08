@@ -108,11 +108,6 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#bfe6d4",endCo
 	}
 }
 .POLOSKAt{
-	background: rgb(48,30,32);
-background: -moz-linear-gradient(90deg, rgba(48,30,32,0) 0%, rgba(213,50,119,1) 50%, rgba(48,30,32,0) 100%);
-background: -webkit-linear-gradient(90deg, rgba(48,30,32,0) 0%, rgba(213,50,119,1) 50%, rgba(48,30,32,0) 100%);
-background: linear-gradient(90deg, rgba(48,30,32,0) 0%, rgba(213,50,119,1) 50%, rgba(48,30,32,0) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#301e20",endColorstr="#301e20",GradientType=1);
 		width: 48%;
 		height: auto;
 		margin-left:auto;
