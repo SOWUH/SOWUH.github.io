@@ -1,16 +1,10 @@
-﻿hr {
-    border: none;
-    color: white;
-    background-color: white;
-    height: 1px;
-   }
-body{
+﻿body{
 font-size: calc(16px + 42 * ((100vw - 300px) / (8500 - 300)) + 51 * ((100vh - 500px) / (8500 - 500)));
 line-height: calc(1.2em - 14 * ((100vw - 300px) / (8500 - 300)) - 7 * ((100vh - 500px) / (8500 - 500)));
-margin-top:0;
+margin-top:0.7em;
 margin-left:0;
 margin-right:0;
-margin-bottom:0;
+margin-bottom:1em;
 padding:0;
 background-color: #301d23;
 background-image: url("bg.png")
@@ -49,7 +43,6 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#bcf4e7",endCo
 		height: auto;
 		margin-left:auto;
 		margin-right:auto;
-		margin-top: 0.7em;
 		min-width: 800px;
 		border: 0.12em solid #301d23; 
 		outline: 0.06em solid rgba(255, 255, 255, 0.5);
@@ -170,11 +163,12 @@ img.picex {
     box-sizing: border-box;
     padding: 0.7%;
 	align: right;
-	width: 50%
+	vertical-align: top;
+	width: 50%;
 }
 .content {
 	display: table-cell;
     box-sizing: border-box;
     padding: 0.5%;
-	width: 25%
+	width: 25%;
 }
