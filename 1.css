@@ -33,6 +33,12 @@ p2 {
 	font-weight: normal;
 	text-shadow: -0.05em 0.07em 0.1em black;
 }
+p3 {
+	font-family: ClearSans;
+	color: black;
+	font-weight: normal;
+	font-size: 0.7em;
+}
 .POLOSKAh{
 background: rgb(188,244,231);
 background: -moz-linear-gradient(90deg, rgba(188,244,231,0.7035189075630253) 0%, rgba(200,242,237,0.8015581232492998) 27%, rgba(217,246,247,0.9472163865546218) 52%, rgba(200,242,237,0.7987570028011204) 77%, rgba(188,244,231,0.6979166666666667) 100%);
@@ -171,4 +177,27 @@ img.picex {
     box-sizing: border-box;
     padding: 0.5%;
 	width: 25%;
+}
+.podval {
+	display: table;
+    box-sizing: border-box;
+    padding: 2%;
+	width: 100%;
+}
+.glow {
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 1em #fff, 0 0 2em #fff, 0 0 30px #e60073, 0 0 4em #e60073, 0 0 50px #e60073, 0 0 6em #e60073, 0 0 7em #e60073;
+  }
+  
+  to {
+    text-shadow: 0 0 2em #fff, 0 0 3em #ff4da6, 0 0 4em #ff4da6, 0 0 5em #ff4da6, 0 0 6em #ff4da6, 0 0 7em #ff4da6, 0 0 8em #ff4da6;
+  }
 }
