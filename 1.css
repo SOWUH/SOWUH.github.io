@@ -165,12 +165,12 @@ img.picex {
 	width: 47%;
 }
 .contentr {
-	display: table-cell;
+    display: table-cell;
     box-sizing: border-box;
     padding: 0.7%;
-	align: right;
-	vertical-align: top;
-	width: 48%;
+    align: right;
+    vertical-align: top;
+    width: 48%;
 }
 .content {
 	display: table-cell;
@@ -179,10 +179,10 @@ img.picex {
 	width: 25%;
 }
 .podval {
-	display: table;
+    display: table;
     box-sizing: border-box;
     padding: 2%;
-	width: 100%;
+    width: 100%;
 }
 .glow {
   color: #fff;
