@@ -19,8 +19,8 @@ a.footer:active {text-decoration: none; color: white; transition: 0.2s linear;}
 a.menu {color:#c6f0e2;}
 a.menu:link {text-decoration: none; color: #c6f0e2;}
 a.menu:visited {text-decoration: none; color: #c6f0e2;}
-a.menu:hover {text-decoration: none; color: white; font-size: 1.1em; text-shadow: -0.25em 0.12em 0.22em black; transition: 0.2s linear;}
-a.menu:active {text-decoration: none; color: white; font-size: 1.1em; text-shadow: -0.25em 0.12em 0.22em black;}
+a.menu:hover {text-decoration: none; color: white; font-size: 1.1em; text-shadow: -0.25em 0.12em 0.22em black, 0 0 0.1em white; transition: 0.2s linear;}
+a.menu:active {text-decoration: none; color: white; font-size: 1.07em; text-shadow: -0.20em 0.10em 0.18em black, 0 0 0.3em white, 0 0 0.2em white;}
 
 .biggradient{
   z-index: -1;
@@ -163,6 +163,15 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#301e20",endCo
     background: linear-gradient(90deg, rgba(48,30,32,0) 0%, rgba(213,50,119,1) 50%, rgba(48,30,32,0) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#301e20",endColorstr="#301e20",GradientType=1);
 	z-index: 6;
+}
+.POLOSKAt:active{
+	background: rgb(64,30,42);
+    background: -moz-linear-gradient(90deg, rgba(48,30,32,0) 0%, rgba(235,50,122,1) 50%, rgba(48,30,32,0) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(48,30,32,0) 0%, rgba(235,50,122,1) 50%, rgba(48,30,32,0) 100%);
+    background: linear-gradient(90deg, rgba(48,30,32,0) 0%, rgba(235,50,122,1) 50%, rgba(48,30,32,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#301e20",endColorstr="#301e20",GradientType=1);
+	z-index: 6;
+	transition: 0.2s linear;
 }
 img.logo{
   object-fit: contain;
