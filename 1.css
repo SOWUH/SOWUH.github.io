@@ -16,9 +16,9 @@ a.footer:visited {text-decoration: none; color: #a6a9a6;}
 a.footer:hover {text-decoration: none; color: white; transition: 0.2s linear;}
 a.footer:active {text-decoration: none; color: white; transition: 0.2s linear;}
 
-a.menu {color:#def2eb; cursor: url("cur.png"), auto;}
-a.menu:link {text-decoration: none; color: #def2eb;}
-a.menu:visited {text-decoration: none; color: #def2eb;}
+a.menu {color:#c6f0e2;}
+a.menu:link {text-decoration: none; color: #c6f0e2;}
+a.menu:visited {text-decoration: none; color: #c6f0e2;}
 a.menu:hover {text-decoration: none; color: white; font-size: 1.1em; text-shadow: -0.25em 0.12em 0.22em black; transition: 0.2s linear;}
 a.menu:active {text-decoration: none; color: white; font-size: 1.1em; text-shadow: -0.25em 0.12em 0.22em black;}
 
@@ -138,7 +138,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#301e20",endCo
 		z-index: 1;
 		position: relative;
 		padding: 0.11em;
-		cursor: url("cur.png"), pointer;
+		cursor: pointer;
 	}
 @media screen and (max-aspect-ratio: 12/16){
 	.POLOSKAt{
