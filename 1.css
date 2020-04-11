@@ -4,7 +4,7 @@ line-height: calc(1.2em - 14 * ((100vw - 300px) / (8500 - 300)) - 7 * ((100vh - 
 margin-top:0.7em;
 margin-left:0;
 margin-right:0;
-margin-bottom:0.7em;
+margin-bottom:0;
 padding:0;
 background-color: #301d23;
 background-image: url("bg.png")
@@ -165,11 +165,6 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#301e20",endCo
 	}
 }
 .POLOSKAt:hover{
-	background: rgb(64,30,42);
-    background: -moz-linear-gradient(90deg, rgba(48,30,32,0) 0%, rgba(213,50,119,1) 50%, rgba(48,30,32,0) 100%);
-    background: -webkit-linear-gradient(90deg, rgba(48,30,32,0) 0%, rgba(213,50,119,1) 50%, rgba(48,30,32,0) 100%);
-    background: linear-gradient(90deg, rgba(48,30,32,0) 0%, rgba(213,50,119,1) 50%, rgba(48,30,32,0) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#301e20",endColorstr="#301e20",GradientType=1);
 	z-index: 6;
 }
 .POLOSKAt:active{
@@ -179,7 +174,6 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#301e20",endCo
     background: linear-gradient(90deg, rgba(48,30,32,0) 0%, rgba(235,50,122,1) 50%, rgba(48,30,32,0) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#301e20",endColorstr="#301e20",GradientType=1);
 	z-index: 6;
-	transition: 0.2s linear;
 }
 img.logo{
   object-fit: contain;
@@ -216,7 +210,7 @@ img.picex{
     box-sizing: border-box;
     padding: 0.5%;
 	width: 25%;
-	vertical-align: top;
+	vertical-align: center;
 }
 .contentm{
 	display: table-cell;
@@ -232,24 +226,21 @@ img.picex{
 }
 
 .podval{
-background: rgb(255,255,255);
-background: -moz-radial-gradient(circle, rgba(200,50,200,0.07) 0%, rgba(70,12,42,0.36) 100%);
-background: -webkit-radial-gradient(circle, rgba(200,50,200,0.07) 0%, rgba(70,12,42,0.36) 100%);
-background: radial-gradient(circle, rgba(200,50,200,0.07) 0%, rgba(70,12,42,0.36) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#34201f",GradientType=1);
+		background-color: #2d191f;
 		width: 46%;
 		height: auto;
 		margin-left:auto;
 		margin-right:auto;
 		min-width: 800px;
-		-moz-box-shadow: -0.31em 0.29em 0.75em 0.22em rgba(28,0,18,0.5);
-		-webkit-box-shadow: -0.31em 0.29em 0.75em 0.22em rgba(28,0,18,0.5);
-		box-shadow: -0.31em 0.29em 0.75em 0.22em rgba(28,0,18,0.5);
+		-moz-box-shadow: -0.31em 0.29em 0.75em 0.22em rgba(28,0,18,0.5), 0 0.06em 0 0.05em black;
+		-webkit-box-shadow: -0.31em 0.29em 0.75em 0.22em rgba(28,0,18,0.5), 0 0.06em 0 0.05em black;
+		box-shadow: -0.31em 0.29em 0.75em 0.22em rgba(28,0,18,0.5), 0 0.06em 0 0.05em black;
 		display: table;
 		z-index: 5;
 		position: relative;
 		margin-top:1.1em;
 		border-radius: 0.2em;
+		margin-bottom:0.7em;
 	}
 @media screen and (max-aspect-ratio: 12/16){
 	.podval{
