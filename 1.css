@@ -129,6 +129,14 @@ background: -moz-linear-gradient(90deg, rgba(48,30,32,0) 5%, rgba(213,50,119,1) 
 background: -webkit-linear-gradient(90deg, rgba(48,30,32,0) 5%, rgba(213,50,119,1) 50%, rgba(48,30,32,0) 95%);
 background: linear-gradient(90deg, rgba(48,30,32,0) 5%, rgba(213,50,119,1) 50%, rgba(48,30,32,0) 95%);
 filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#301e20",endColorstr="#301e20",GradientType=1);
+		-webkit-tap-highlight-color: rgba(0,0,0,0);
+		-webkit-tap-highlight-color: transparent;
+		-webkit-touch-callout: none;
+		-webkit-user-select: none;
+		-khtml-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
 		width: 46%;
 		height: 1.6em;
 		margin-left:auto;
