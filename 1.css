@@ -210,6 +210,7 @@ img.picex{
 	display: table-cell;
     box-sizing: border-box;
     padding: 0.5%;
+	padding-right: 0.6em;
 	width: 25%;
 	vertical-align: center;
 }
@@ -221,9 +222,9 @@ img.picex{
 	vertical-align: bottom;
 }
 .null{
-	display: table-cell;
-    box-sizing: border-box;
-	width: 7.4%;
+	position: absolute;
+	top: 0.2em;
+	right: 0.5em;
 }
 
 .podval{
