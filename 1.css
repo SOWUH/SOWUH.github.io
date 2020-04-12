@@ -12,8 +12,8 @@ background-image: url("bg.png");
 a {color:#d22e75;}
 a:link  {text-decoration: none; color: #d22e75;}
 a:visited {text-decoration: none; color: #d22e75;}
-a:hover {text-decoration: none; color: white; transition: 0.2s linear;}
-a:active {text-decoration: none; color: white; transition: 0.2s linear;}
+a:hover {text-decoration: none; color: white; transition: 0.2s linear;  text-shadow: 0 0 0.05em #d22e75, 0 0 0.25em white;}
+a:active {text-decoration: none; color: white; transition: 0.2s linear; text-shadow: 0 0 0.3em white, 0 0 0.2em white;}
 
 a.footer {color:#a6a9a6;}
 a.footer:link  {text-decoration: none; color: #a6a9a6;}
@@ -211,9 +211,10 @@ img.logo{
 img.inline{
   object-fit: contain;
   display: inline-block;
-  height: 0.7em;
-  vertical-align:center;
+  height: 0.72em;
   width: auto;
+  vertical-align:center;
+  margin-top:0.42em;
 }
 img.picex{
   object-fit: contain;
