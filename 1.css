@@ -191,6 +191,7 @@ img.logo{
   display: block;
   height: auto;
   width: 100%;
+  clear:both;
 }
 img.picex{
   object-fit: contain;
@@ -199,7 +200,8 @@ img.picex{
   vertical-align: top;
   height: auto;
   width: 100%;
-  overflow: auto;
+  overflow: hidden;
+  float: right;
 }
 .contentl{
 	display: table-cell;
@@ -228,10 +230,13 @@ img.picex{
 .contentm{
 	display: table-cell;
     box-sizing: border-box;
-    padding: 0.6%;
 	width: 25%;
+	height: 1.4em;
+	min-height: 1.4em;
+	max-height: 1.4em;
 	vertical-align: bottom;
 	overflow: hidden;
+	padding:0.2em;
 }
 .null{
 	position: absolute;
@@ -272,9 +277,5 @@ img.picex{
 		margin-left:auto;
 		margin-right:auto;
 		min-width: 300px;
-	}
-}
-.tr{
-		width: auto;
 	}
 }
