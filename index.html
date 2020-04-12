@@ -16,7 +16,7 @@ function changepage(div1,div2,div3,div4)
    d4 = document.getElementById(div4);
    if( d1.style.display == "none" )
    {
-      d1.style.display = "table";
+      d1.style.display = "table-row";
       d2.style.display = "none";
 	  d3.style.display = "none";
 	  d4.style.display = "none";
@@ -38,7 +38,9 @@ function changepage(div1,div2,div3,div4)
 <div class="POLOSKAt">
 <div class="contentm" align=center><p2><a href="javascript:changepage('Galleries','Index','Commission','About')" class="menu">Galleries</a></p2></div><div class="contentm" align=center><p2><a  href="javascript:changepage('Commission','Galleries','Index','About')" class="menu">Commission</a></p2></div><div class="contentm" align=center><p2><a href="javascript:changepage('About','Galleries','Index','Commission')" class="menu">About</a></p2></div>
 </div>
-<div class="POLOSKA" align=center id="Index" style="display:table;">
+<div class="POLOSKA" align=center">
+
+<div align=center id="Index" style="display:table-row;">
 <div class="contentl" align=left>
 <p1>Hi!<br>
 I am kinda artist and this is my webpage.<br>
@@ -52,23 +54,21 @@ Thank you for opening it.
 </picture>
 </div>
 </div>
-<div class="POLOSKA" align=center id="Galleries" style="display:none;">
-<div class="contentl" align=left>
-<p1>This is Gallery
-</p1>
+
+
+<div align=center id="Galleries" style="display:none;">
+This is galleries
 </div>
+
+
+<div align=center id="Commission" style="display:none;">
+This is commission
 </div>
-<div class="POLOSKA" align=center id="Commission" style="display:none;">
-<div class="contentl" align=left>
-<p1>This is Commission
-</p1>
+
+<div align=center id="About" style="display:none;">
+This is about
 </div>
-</div>
-<div class="POLOSKA" align=center id="About" style="display:none;">
-<div class="contentl" align=left>
-<p1>This is About
-</p1>
-</div>
+
 </div>
 <div class="podval" align=center>
 <div class="content" align=right><p3>SOWUH.art@gmail.com<br>Follow me on <a href="http://twitter.com/SOWUHarts" class="footer" target="_blank">twitter</a><br>Designed in 2020</p3></div>

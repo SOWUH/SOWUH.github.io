@@ -202,17 +202,18 @@ img.picex{
 .contentl{
 	display: table-cell;
     box-sizing: border-box;
-    padding: 2%;
-	align: left;
-	width: 47%;
+    padding: 0.8em;
+	vertical-align: top;
+	width: 48%;
+	float: left;
 }
 .contentr{
 	display: table-cell;
     box-sizing: border-box;
     padding: 0.7%;
-	align: right;
 	vertical-align: top;
 	width: 48%;
+	float: right;
 }
 .content{
 	display: table-cell;
@@ -268,5 +269,9 @@ img.picex{
 		margin-left:auto;
 		margin-right:auto;
 		min-width: 300px;
+	}
+}
+.tr{
+		width: auto;
 	}
 }
