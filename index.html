@@ -7,19 +7,38 @@
 <link rel="stylesheet" type="text/css" href="1.css" />
 <link rel="stylesheet" type="text/css" href="fonts.css" />
 <link rel="shortcut icon" href="favicon.png" type="image/png">
+<script type="text/javascript">
+function changepage(div1,div2,div3,div4)
+{
+   d1 = document.getElementById(div1);
+   d2 = document.getElementById(div2);
+   d3 = document.getElementById(div3);
+   d4 = document.getElementById(div4);
+   if( d1.style.display == "none" )
+   {
+      d1.style.display = "table";
+      d2.style.display = "none";
+	  d3.style.display = "none";
+	  d4.style.display = "none";
+   }
+}
+</script>
 </head>
 <body>
 <div class="biggradient"></div>
 <div class="POLOSKAh" align=center>
-<picture>
+<div class="null">
+
+</div>
+<a href="javascript:changepage('Index','About','Galleries','Commission')"><picture>
   <source srcset="logo.webp" type="image/webp">
   <img class="logo" src="logo.png" alt="SOWUH. CG Artist official webpage">
-</picture>
+</picture></a>
 </div>
 <div class="POLOSKAt">
-<div class="contentm" align=center><p2><a href="#" class="menu">Galleries</a></p2></div><div class="contentm" align=center><p2><a href="#" class="menu">Commission</a></p2></div><div class="contentm" align=center><p2><a href="#" class="menu">About</a></p2></div>
+<div class="contentm" align=center><p2><a href="javascript:changepage('Galleries','Index','Commission','About')" class="menu">Galleries</a></p2></div><div class="contentm" align=center><p2><a  href="javascript:changepage('Commission','Galleries','Index','About')" class="menu">Commission</a></p2></div><div class="contentm" align=center><p2><a href="javascript:changepage('About','Galleries','Index','Commission')" class="menu">About</a></p2></div>
 </div>
-<div class="POLOSKA" align=center>
+<div class="POLOSKA" align=center id="Index" style="display:table;">
 <div class="contentl" align=left>
 <p1>Hi!<br>
 I am kinda artist and this is my webpage.<br>
@@ -33,8 +52,26 @@ Thank you for opening it.
 </picture>
 </div>
 </div>
+<div class="POLOSKA" align=center id="Galleries" style="display:none;">
+<div class="contentl" align=left>
+<p1>This is Gallery
+</p1>
+</div>
+</div>
+<div class="POLOSKA" align=center id="Commission" style="display:none;">
+<div class="contentl" align=left>
+<p1>This is Commission
+</p1>
+</div>
+</div>
+<div class="POLOSKA" align=center id="About" style="display:none;">
+<div class="contentl" align=left>
+<p1>This is About
+</p1>
+</div>
+</div>
 <div class="podval" align=center>
-<div class="content" align=right><p3> Follow me on <a href="https://twitter.com/SOWUHarts" class="footer" target="_blank">twitter</a><br>SOWUH.art@gmail.com<br>2020</p3></div>
+<div class="content" align=right><p3>SOWUH.art@gmail.com<br>Follow me on <a href="http://twitter.com/SOWUHarts" class="footer" target="_blank">twitter</a><br>Designed in 2020</p3></div>
 </div>
 </body>
 </html>
