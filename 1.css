@@ -148,6 +148,8 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#301e20",endCo
 		user-select: none;
 		width: 46%;
 		height: 1.6em;
+		min-height: 1.6em;
+		max-height: 1.6em;
 		margin-left:auto;
 		margin-right:auto;
 		min-width: 800px;
@@ -229,6 +231,7 @@ img.picex{
     padding: 0.6%;
 	width: 25%;
 	vertical-align: bottom;
+	overflow: hidden;
 }
 .null{
 	position: absolute;
