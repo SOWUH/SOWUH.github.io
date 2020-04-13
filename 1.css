@@ -219,12 +219,9 @@ img.inline{
 img.picex{
   object-fit: contain;
   display: inline-block;
-  align: right;
   vertical-align: top;
   height: auto;
   width: 100%;
-  overflow: hidden;
-  float: right;
 }
 .contentl{
 	display: table-cell;
@@ -234,6 +231,14 @@ img.picex{
 	width: 48%;
 	float: left;
 }
+.contenttr{
+	display: table-cell;
+    box-sizing: border-box;
+    padding: 0.7em;
+	vertical-align: top;
+	width: 49%;
+	float: right;
+}
 .contentr{
 	display: table-cell;
     box-sizing: border-box;
@@ -241,6 +246,14 @@ img.picex{
 	vertical-align: top;
 	width: 48%;
 	float: right;
+}
+.contentpl{
+	display: table-cell;
+    box-sizing: border-box;
+    padding: 0.5%;
+	vertical-align: top;
+	width: 50%;
+	float: left;
 }
 .content{
 	display: table-cell;
