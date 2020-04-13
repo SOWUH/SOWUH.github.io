@@ -8,8 +8,7 @@ margin-bottom:0;
 padding:0;
 background-color: #3b1d24;
 background-image: url("bg.png");
-  image-rendering: -webkit-optimize-contrast;
-
+image-rendering: -webkit-optimize-contrast;
 }
 a {color:#d22e75;}
 a:link  {text-decoration: none; color: #d22e75;}
