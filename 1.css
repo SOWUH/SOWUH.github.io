@@ -15,11 +15,18 @@ text-rendering: optimizeLegibility;
 -moz-osx-font-smoothing: grayscale;
 font-rendering-mode: enhanced;
 }
-a {color:#d22e75;}
-a:link  {text-decoration: none; color: #d22e75;}
-a:visited {text-decoration: none; color: #d22e75;}
-a:hover {text-decoration: none; color: white; transition: 0.2s linear;  text-shadow: 0 0 0.05em #d22e75, 0 0 0.25em white;}
-a:active {text-decoration: none; color: white; transition: 0.2s linear; text-shadow: 0 0 0.3em white, 0 0 0.2em white;}
+
+a {color: black;}
+a:link  {text-decoration: none;}
+a:visited {text-decoration: none;}
+a:hover {text-decoration: none;}
+a:active {text-decoration: none;}
+
+a.body {color:#d22e75;}
+a.body:link  {text-decoration: none; color: #d22e75;}
+a.body:visited {text-decoration: none; color: #d22e75;}
+a.body:hover {text-decoration: none; color: white; transition: 0.2s linear;  text-shadow: 0 0 0.05em #d22e75, 0 0 0.25em white;}
+a.body:active {text-decoration: none; color: white; transition: 0.2s linear; text-shadow: 0 0 0.3em white, 0 0 0.2em white;}
 
 a.footer {color:#a6a9a6;}
 a.footer:link  {text-decoration: none; color: #a6a9a6;}
@@ -174,7 +181,6 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#301e20",endCo
 		margin-left:auto;
 		margin-right:auto;
 		min-width: 800px;
-		display: table;
 		z-index: 1;
 		position: relative;
 		padding: 0.11em;
@@ -248,7 +254,7 @@ img.picex{
 .contentr{
 	display: table-cell;
     box-sizing: border-box;
-    padding: 0.7%;
+    padding: 0.5%;
 	vertical-align: top;
 	width: 48%;
 	float: right;
@@ -256,7 +262,7 @@ img.picex{
 .contentpl{
 	display: table-cell;
     box-sizing: border-box;
-    padding: 0.5%;
+    padding: 0.7%;
 	vertical-align: top;
 	width: 50%;
 	float: left;
@@ -270,13 +276,15 @@ img.picex{
 	vertical-align: center;
 }
 .contentm{
-	display: table-cell;
+	display: inline-block;
     box-sizing: border-box;
-	width: 25%;
+	width: 33.333%;
+	margin-top:0.05em;
 	height: 1.4em;
 	min-height: 1.4em;
 	max-height: 1.4em;
-	vertical-align: bottom;
+	align: center;
+	vertical-align: center;
 	overflow: hidden;
 	padding:0.2em;
 }
