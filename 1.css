@@ -9,6 +9,11 @@ padding:0;
 background-color: #3b1d24;
 background-image: url("bg.png");
 image-rendering: -webkit-optimize-contrast;
+color-profile: url("http://www.color.org/profiles/sRGB2014.icc");
+text-rendering: optimizeLegibility;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+font-rendering-mode: enhanced;
 }
 a {color:#d22e75;}
 a:link  {text-decoration: none; color: #d22e75;}
