@@ -90,11 +90,11 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#bcf4e7",endCo
 		margin-left:auto;
 		margin-right:auto;
 		min-width: 800px;
-		outline: 0.06em solid rgba(255, 255, 255, 0.5);
-		outline-offset: 0.12em;
 		-moz-box-shadow: -0.25em 0.22em 0.4em 0.12em rgba(28,0,18,0.5), -0.32em 0.31em 0.85em 0.22em rgba(28,0,18,0.7), -0.35em 0.15em 1.5em 0.42em rgba(28,0,18,0.5);
 		-webkit-box-shadow: -0.25em 0.22em 0.4em 0.12em rgba(28,0,18,0.5), -0.32em 0.31em 0.85em 0.22em rgba(28,0,18,0.7), -0.35em 0.15em 1.5em 0.42em rgba(28,0,18,0.5);
 		box-shadow: -0.30em 0.22em 0.4em 0.12em rgba(18,0,28,0.35), -0.32em 0.31em 0.75em 0.25em rgba(28,0,18,0.75), -0.35em 0.15em 1.5em 0.42em rgba(18,0,28,0.35);
+		outline: 0.06em solid rgba(255, 255, 255, 0.5);
+		outline-offset: 0.12em;
 		z-index: 5;
 		position: relative;
 		margin-bottom: 0.11em;
@@ -134,12 +134,12 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#bcf4e7",endCo
 		margin-left:auto;
 		margin-right:auto;
 		min-width: 800px;
-		outline: 0.06em solid rgba(255, 255, 255, 0.5);
-		outline-offset: 0.12em;
 		margin-top: 0.11em;
 		-moz-box-shadow: -0.25em 0.22em 0.4em 0.12em rgba(28,0,18,0.5), -0.32em 0.31em 0.85em 0.22em rgba(28,0,18,0.7), -0.35em 0.15em 1.5em 0.42em rgba(28,0,18,0.5);
 		-webkit-box-shadow: -0.25em 0.22em 0.4em 0.12em rgba(28,0,18,0.5), -0.32em 0.31em 0.85em 0.22em rgba(28,0,18,0.7), -0.35em 0.15em 1.5em 0.42em rgba(28,0,18,0.5);
 		box-shadow: -0.30em 0.22em 0.4em 0.12em rgba(18,0,28,0.35), -0.32em 0.31em 0.75em 0.25em rgba(28,0,18,0.75), -0.35em 0.15em 1.5em 0.42em rgba(18,0,28,0.35);
+		outline: 0.06em solid rgba(255, 255, 255, 0.5);
+		outline-offset: 0.12em;
 		display: table;
 		z-index: 5;
 		position: relative;
@@ -279,12 +279,11 @@ img.picex{
 	display: inline-block;
     box-sizing: border-box;
 	width: 33.333%;
-	margin-top:0.05em;
 	height: 1.4em;
 	min-height: 1.4em;
 	max-height: 1.4em;
 	align: center;
-	vertical-align: center;
+	vertical-align: bottom;
 	overflow: hidden;
 	padding:0.2em;
 }
