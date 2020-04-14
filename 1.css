@@ -24,19 +24,21 @@ a:active {text-decoration: none;}
 
 a.body {color: #d22e75;}
 a.body:link {color: #d22e75;}
+a.body:focus {color: white;}
 a.body:visited {color: #d22e75;}
 a.body:hover {color: white; text-shadow: 0 0 0.05em #d22e75, 0 0 0.25em white; transition: 0.2s linear;}
 a.body:active {text-decoration: none; color: white; text-shadow: 0 0 0.3em white, 0 0 0.2em white; transition: 0.2s linear;}
 
 a.footer {color: #a6a9a6;}
-a.footer:link  {color: #a6a9a6;}
+a.footer:link {color: #a6a9a6;}
+a.footer:focus {color: white;}
 a.footer:visited {color: #a6a9a6;}
 a.footer:hover {color: white; transition: 0.2s linear;}
 a.footer:active {color: white; transition: 0.2s linear;}
 
 a.menu {color: #c6f0e2;}
 a.menu:link {color: #c6f0e2; transition: 0.1s linear;}
-a.menu:focus {color: white; font-size: 1.05em; text-shadow: -0.25em 0.12em 0.22em black, 0 0 0.1em white; transition: 0.2s linear;}
+a.menu:focus {color: white; font-size: 1.05em; text-shadow: -0.18em 0.08em 0.16em black, 0 0 0.1em white; transition: 0.2s linear;}
 a.menu:visited {color: #c6f0e2; transition: 0.1s linear;}
 a.menu:hover {color: white; font-size: 1.1em; text-shadow: -0.25em 0.12em 0.22em black, 0 0 0.1em white; transition: 0.2s linear;}
 a.menu:active {color: white; font-size: 1.07em; text-shadow: -0.20em 0.10em 0.18em black, 0 0 0.3em white, 0 0 0.2em white; transition: 0.2s linear;}
@@ -63,10 +65,15 @@ background: -webkit-radial-gradient(circle, rgba(150,90,100,0.6) 1%, rgba(10,2,8
 background: radial-gradient(circle, rgba(150,90,100,0.6) 1%, rgba(10,2,8,0.88) 100%);
 filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#9a5b61",endColorstr="#0a0208",GradientType=1);
 }
-p1 {
+h {
 	font-family: ClearSans;
 	color: #301e20;
 	font-weight: normal;
+}
+p1 {
+	font-family: ClearSans;
+	font-weight: normal;
+	font-size: 0.9em;
 }
 p2 {
 	font-family: ClearSans;
@@ -90,11 +97,6 @@ p3 {
 		-webkit-tap-highlight-color: rgba(0,0,0,0);
 		-webkit-tap-highlight-color: transparent;
 		-webkit-touch-callout: none;
-		-webkit-user-select: none;
-		-khtml-user-select: none;
-		-moz-user-select: none;
-		-ms-user-select: none;
-		user-select: none;
 	}
 @media screen and (max-aspect-ratio: 12/16){
 	.gum{
@@ -125,6 +127,11 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#bcf4e7",endCo
 		outline-offset: 0.12em;
 		margin-bottom: 0.11em;
 		margin-top:0.7em;
+		-webkit-user-select: none;
+		-khtml-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
 	}
 #clay{
 background: #a6c6c0;
@@ -152,6 +159,11 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#301e20",endCo
 		z-index: 1;
 		padding: 0.11em;
 		cursor: pointer;
+		-webkit-user-select: none;
+		-khtml-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
 	}
 #muscle:hover{
 	z-index: 6;
@@ -208,7 +220,7 @@ img.picex{
 	align: center;
 	vertical-align: bottom;
 	overflow: hidden;
-	padding:0.2em;
+	padding:0.22em;
 	-webkit-tap-highlight-color: rgba(0,0,0,0);
 	-webkit-tap-highlight-color: transparent;
 	-webkit-touch-callout: none;
