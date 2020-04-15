@@ -13,7 +13,12 @@ text-rendering: optimizeLegibility;
 -webkit-font-smoothing: antialiased;
 -moz-osx-font-smoothing: grayscale;
 font-rendering-mode: enhanced;
+overflow-y:scroll;
+scrollbar-width: thin;
 }
+
+::-moz-selection {color: white; background: rgba(215,52,123,0.75);}
+::selection {color: white; background: rgba(215,52,123,0.8);}
 
 a {color: black;}
 a:link {text-decoration: none;}
@@ -209,6 +214,11 @@ img.picex{
   vertical-align: top;
   height: auto;
   width: 100%;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 #snap{
 	display: inline-block;
@@ -231,7 +241,6 @@ img.picex{
 	user-select: none;
 }
 .content{
-	display: table-cell;
     box-sizing: border-box;
 }
 #l{
@@ -258,11 +267,17 @@ img.picex{
 	width: 50%;
 	float: left;
 }
+#ctr{
+	padding: 1%;
+	vertical-align: top;
+	width: 100%;
+}
 #f{
     padding: 0.5%;
 	padding-right: 0.6em;
 	width: 25%;
 	vertical-align: center;
+	float: right;
 }
 .null{
 	position: absolute;
