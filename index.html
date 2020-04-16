@@ -22,10 +22,19 @@ function changepage(div1,div2,div3,div4)
    d4 = document.getElementById(div4);
    if( d1.style.display == "none" )
    {
-      d1.style.display = "table-row";
+      d1.style.display = "block";
       d2.style.display = "none";
 	  d3.style.display = "none";
 	  d4.style.display = "none";
+   }
+}
+function NSFW(div1,div2)
+{
+   d1 = document.getElementById(div1);
+   d2 = document.getElementById(div2);
+   {
+      d1.style.display = "block";
+      d2.style.display = "none";
    }
 }
 </script>
@@ -46,21 +55,21 @@ function changepage(div1,div2,div3,div4)
 <div id="clay" class="gum" align=center">
 
 
-<div align=center id="Index" style="display:table-row;";>
+<div align=center id="Index" style="display:block;";>
+<div class="content" id="ctr" align=center><p1>Welcome to my webpage. Thank you for opening it!</p1></div>
 <div class="content" id="l" align=left>
-<p1>Hi!<br>
-Welcome to my webpage.<br><br>
+<p1><hr>
 My nickname is SOWUH and I draw pictures.<br><br>
 On this site you can find my contacts, read some info about me and even have a look at my commission terms.<br>
-Feel free to push some buttons.
-</p1>
+Feel free to push some buttons.<br>
+<hr></p1>
 </div>
 <div class="content" id="r" align=right>
 <picture>
   <source srcset="./img/FBCwash.jpf" type="image/jpf">
   <source srcset="./img/FBCwash.heic" type="image/heic">
   <source srcset="./img/FBCwash.webp" type="image/webp">
-  <img class="picex" src="./img/FBCwash.jpg" alt="welcome">
+  <img class="picex" align="middle" src="./img/FBCwash.jpg" alt="welcome">
 </picture>
 </div>
 </div>
@@ -76,7 +85,7 @@ Feel free to push some buttons.
 </picture>
 </div>
 <div class="content" id="tr" align=left>
-<p1><br>I have two main galleries:<br><br>
+<p1>I have two main galleries:<br><br>
 <a href="http://artstation.com/SOWUH" target="_blank" class="body"><img class="inline" src="http://www.artstation.com/assets/favicon.png" alt="Artst.logo"> SFW on Artstation</a>
 and<br>
 <a href="http://hentai-foundry.com/pictures/user/SOWUH" target="_blank" class="body"><img class="inline" src="http://img.hentai-foundry.com/themes/Dark/favicon.ico" alt="HF.logo"> NSFW on Hentai Foundry</a>
@@ -89,12 +98,34 @@ and<br>
 
 
 <div align=center id="Commission" style="display:none;">
+<div class="content" id="WARNING" align=center style="display:block;"><p1>BEWARE. There is NOT SAFE FOR WORK content on this page!<br><a href="javascript:NSFW('NSFW','WARNING')" class="body">Show anyway</a></p1></div>
+<div align=center id="NSFW" style="display:none;">
 <div class="content" id="l" align=left>
-<p1>This is commission
+<p1>Can I draw for you? Sure!<br><br>
+Base price of my work: $100<br>
+It's one character or any entity with the background.
 </p1>
 </div>
+<div class="content" id="r" align=center>
+<picture>
+  <img class="picex" src="./img/comm1.png" alt="girlz-girlz-girlz"><br>
+  <p4>$100 for any of these cuties</p4>
+</picture>
 </div>
-
+<div class="content" id="ctr" align=center><hr></div>
+<div class="content" id="pl" align=center>
+<picture>
+  <img class="picex" src="./img/comm2.png" alt="Some thumbz">
+</picture>
+<p4>Oof. Looks like there is some sexual tension on this examples. All of these for $150.</p4>
+</div>
+<div class="content" id="tr" align=left>
+<p1>If you want more than one character — it will cost +$50 for each.
+</p1>
+</div>
+<div class="content" id="ctr" align=center><hr></div>
+</div>
+</div>
 
 <div align=center id="About" style="display:none;">
 <div class="content" id="ctr" align=left>

@@ -15,6 +15,7 @@ text-rendering: optimizeLegibility;
 font-rendering-mode: enhanced;
 overflow-y:scroll;
 scrollbar-width: thin;
+font-family: ClearSans;
 }
 
 ::-moz-selection {color: white; background: rgba(215,52,123,0.75);}
@@ -71,25 +72,26 @@ background: radial-gradient(circle, rgba(150,90,100,0.6) 1%, rgba(10,2,8,0.88) 1
 filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#9a5b61",endColorstr="#0a0208",GradientType=1);
 }
 h {
-	font-family: ClearSans;
 	font-weight: normal;
 }
 p1 {
-	font-family: ClearSans;
 	font-weight: normal;
 	font-size: 0.9em;
 	color: #301e20;
 }
 p2 {
-	font-family: ClearSans;
 	font-weight: normal;
 	text-shadow: -0.05em 0.07em 0.1em black;
 }
 p3 {
-	font-family: ClearSans;
 	color: #757373;
 	font-weight: normal;
 	font-size: 0.6em;
+}
+p4 {
+	font-weight: normal;
+	font-size: 0.75em;
+	color: #301e20;
 }
 .gum{
 		width: 46%;
@@ -200,7 +202,7 @@ img.logo{
 }
 img.inline{
   object-fit: contain;
-  display: inline-block;
+  display: inline;
   height: 0.72em;
   width: auto;
   vertical-align:center;
@@ -208,7 +210,7 @@ img.inline{
 }
 img.picex{
   object-fit: contain;
-  display: inline-block;
+  display: block;
   vertical-align: top;
   height: auto;
   width: 100%;
@@ -240,41 +242,42 @@ img.picex{
 }
 .content{
     box-sizing: border-box;
+	display: inline-block;
+	vertical-align: middle;
+	padding: 0.4%;
 }
 #l{
-    padding: 0.8em;
-	vertical-align: top;
 	width: 48%;
-	float: left;
+	align: left;
+	padding: 4%;
 }
 #tr{
-    padding: 0.7em;
-	vertical-align: top;
-	width: 49%;
-	float: right;
+	width: 48%;
+	align: right;
+	padding: 4%;
 }
 #r{
-    padding: 0.5%;
-	vertical-align: top;
-	width: 48%;
-	float: right;
+	width: 50%;
+	align: right;
 }
 #pl{
-    padding: 0.5%;
-	vertical-align: top;
 	width: 50%;
-	float: left;
+	align: left;
 }
 #ctr{
-	padding: 1%;
-	vertical-align: top;
 	width: 100%;
+	align: center;
+	padding: 2%;
+}
+#WARNING{
+	padding: 1%;
+	width: 100%;
+	align: center;
 }
 #fu{
     padding: 0.5%;
 	padding-right: 0.6em;
 	width: 25%;
-	vertical-align: center;
 	align: right;
 }
 .null{
