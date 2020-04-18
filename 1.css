@@ -259,10 +259,12 @@ img.picex{
 #r{
 	width: 50%;
 	align: right;
+	line-height: calc(0.9em - 14 * ((100vw - 300px) / (8500 - 300)) - 8 * ((100vh - 500px) / (8500 - 500)));
 }
 #pl{
 	width: 50%;
 	align: left;
+	line-height: calc(0.9em - 14 * ((100vw - 300px) / (8500 - 300)) - 8 * ((100vh - 500px) / (8500 - 500)));
 }
 #ctr{
 	width: 100%;
