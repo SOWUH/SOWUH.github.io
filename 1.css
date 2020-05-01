@@ -73,6 +73,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#9a5b61",endCo
 }
 h {
 	font-weight: normal;
+	text-shadow: -0.05em 0.07em 0.1em black;
 }
 p1 {
 	font-weight: normal;
