@@ -15,7 +15,7 @@
 <meta property="og:image:type" content="image/png" />
 <meta property="og:description" content="My nickname is SOWUH and I kinda draw pictures. On this site you can find my contacts, read some info about me, etc." />
 <link rel="stylesheet" type="text/css" href="cp.css" />
-<link rel="stylesheet" type="text/css" href="1.css" />
+<link rel="stylesheet" type="text/css" href="v2.css" />
 <link rel="stylesheet" type="text/css" href="fonts.css" />
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="manifest" href="./favicons/site.webmanifest">
@@ -25,84 +25,76 @@
 <meta name="msapplication-config" content="./favicons/browserconfig.xml">
 <meta name="theme-color" content="#d22e75">
 <script>
-function changepage(div1,div2,div3,div4)
+function changepage(section1,section2,section3,section4,section5)
 {
-   d1 = document.getElementById(div1);
-   d2 = document.getElementById(div2);
-   d3 = document.getElementById(div3);
-   d4 = document.getElementById(div4);
+   d1 = document.getElementById(section1);
+   d2 = document.getElementById(section2);
+   d3 = document.getElementById(section3);
+   d4 = document.getElementById(section4);
+   d5 = document.getElementById(section5);
    if( d1.style.display == "none" )
    {
       d1.style.display = "block";
       d2.style.display = "none";
 	  d3.style.display = "none";
 	  d4.style.display = "none";
-   }
-}
-function NSFW(div1,div2)
-{
-   d1 = document.getElementById(div1);
-   d2 = document.getElementById(div2);
-   {
-      d1.style.display = "block";
-      d2.style.display = "none";
+	  d5.style.display = "none";
    }
 }
 </script>
 </head>
 <body>
 <div id="cast"></div>
-<div id="topknot" class="gum" align=center>
-<a href="javascript:changepage('Index','About','Galleries','Commission')"><picture>
+<header id="topknot" class="gum">
+<a href="javascript:changepage('Index','About','Galleries','Commission','WARNING')">
+<picture>
   <source srcset="./avif/logo/logo.avif" type="image/AVIF">
   <source srcset="./img/logo/logo.heic" type="image/heic">
   <source srcset="./webp/logo/logo.webp" type="image/webp">
   <source srcset="./img/logo/logo.jpf" type="image/jp2">
-  <img class="logo" src="./img/logo/logo.png" alt="SOWUH. CG Artist official site">
-</picture></a>
-</div>
-<div id="muscle" class="gum" align=center>
-<div id="snap" align=center><h><a href="javascript:changepage('Galleries','Index','Commission','About')" class="menu">Galleries</a></h></div><div id="snap" align=center><h><a  href="javascript:changepage('Commission','Galleries','Index','About')" class="menu">Commission</a></h></div><div id="snap" align=center><h><a href="javascript:changepage('About','Galleries','Index','Commission')" class="menu">About</a></h></div>
-</div>
-<div id="clay" class="gum" align="center">
+  <img class="logo" src="./img/logo/logo.png" alt="SOWUH. CG Artist official site"></picture></a></header>
+<nav id="muscle" class="gum">
+<h1 class="snap"><a href="javascript:changepage('Galleries','Index','Commission','About','WARNING')" class="menu">Galleries</a></h1>
+<h1 class="snap"><a href="javascript:changepage('WARNING','Commission','Galleries','Index','About')" class="menu">Commission</a></h1>
+<h1 class="snap"><a href="javascript:changepage('About','Galleries','Index','Commission','WARNING')" class="menu">About</a></h1>
+</nav>
+<main id="clay" class="gum">
 
 
-<div align=center id="Index" style="display:block;">
-<div class="content" id="ctr" align=center><p1>Welcome to my webpage. Thank you for opening it!</p1></div>
-<div class="content" id="l" align=justify>
-<p1><picture>
+<section id="Index" style="display:block;">
+<h2>Welcome to my webpage. Thank you for opening it!</h2>
+<p class="half">
+<picture>
   <source srcset="./avif/up.avif" type="image/AVIF">
   <source srcset="./img/up.heic" type="image/heic">
   <source srcset="./webp/up.webp" type="image/webp">
   <source srcset="./img/up.jpf" type="image/jp2">
-  <img class="picex" align="middle" src="./img/up.png" alt="pizdulinka">
+  <img class="logo" src="./img/up.png" alt="">
 </picture><br>
 My nickname is SOWUH and I draw pictures.<br><br>
 On this site you can find my contacts, read some info about me and even have a look at my commission terms.<br>
 Feel free to push some buttons.<br><br>
-</p1>
 <picture>
   <source srcset="./avif/down.avif" type="image/AVIF">
   <source srcset="./img/down.heic" type="image/heic">
   <source srcset="./webp/down.webp" type="image/webp">
   <source srcset="./img/down.jpf" type="image/jp2">
-  <img class="picex" align="middle" src="./img/down.png" alt="drawinghr">
+  <img class="logo" src="./img/down.png" alt="">
 </picture>
-</div>
-<div class="content" id="r" align=right>
+</p>
+
 <picture>
   <source srcset="./avif/FBCwash.avif" type="image/AVIF">
   <source srcset="./img/FBCwash.heic" type="image/heic">
   <source srcset="./webp/FBCwash.webp" type="image/webp">
   <source srcset="./img/FBCwash.jpf" type="image/jp2">
-  <img class="picex" align="middle" src="./img/FBCwash.jpg" alt="welcome">
+  <img class="picex" src="./img/FBCwash.jpg" alt="welcome">
 </picture>
-</div>
-</div>
+</section>
 
 
-<div align=center id="Galleries" style="display:none;">
-<div class="content" id="pl" align=left>
+<section id="Galleries" style="display:none;">
+<h2>Follow me! I need you!</h2>
 <picture>
   <source srcset="./avif/gal.avif" type="image/AVIF">
   <source srcset="./img/gal.heic" type="image/heic">
@@ -110,169 +102,182 @@ Feel free to push some buttons.<br><br>
   <source srcset="./img/gal.jpf" type="image/jp2">
   <img class="picex" src="./img/gal.png" alt="Some thumbz">
 </picture>
-</div>
-<div class="content" id="tr" align=justify>
-<p1>I have two main galleries:<br><br>
-<a href="http://artstation.com/SOWUH" target="_blank" class="body"><img class="inline" src="http://www.artstation.com/assets/favicon.png" alt="Artst.logo"> SFW on Artstation</a>
+<article class="content">
+<h3>I have two main galleries:</h3>
+<p>
+<br><a href="http://artstation.com/SOWUH" target="_blank" class="body"><img class="inline" src="http://www.artstation.com/assets/favicon.png" alt="Artst.logo"> SFW on Artstation</a>
 and<br>
 <a href="http://hentai-foundry.com/pictures/user/SOWUH" target="_blank" class="body"><img class="inline" src="http://img.hentai-foundry.com/themes/Dark/favicon.ico" alt="HF.logo"> NSFW on Hentai Foundry</a>
-<br><br><hr><br>Also you can find me and my pictures on twitter:<br>
-<a href="http://twitter.com/SOWUHarts" target="_blank" class="body"><img class="inline" src="http://abs.twimg.com/favicons/twitter.ico" alt="Twt.logo"> Main</a>/<a href="http://twitter.com/SOWUH_sane" target="_blank" class="body">SFW</a><br><br><hr><br>
-И, конечно же, у меня есть<br> <a href="http://vk.com/SOWUH" target="_blank" class="body"><img class="inline" src="https://vk.com/images/favicon.ico" alt="vk.logo"> сообщество Вконтакте</a>
-</p1>
-</div>
-</div>
+<br><br>
+</p>
+<hr>
+<p>
+<br>Also you can find me and my pictures on twitter:<br>
+<a href="http://twitter.com/SOWUHarts" target="_blank" class="body"><img class="inline" src="http://abs.twimg.com/favicons/twitter.ico" alt="Twt.logo"> Main</a>/<a href="http://twitter.com/SOWUH_sane" target="_blank" class="body">SFW</a>
+<br><br>
+</p>
+<hr>
+<p>
+<br>И, конечно же, у меня есть<br> <a href="http://vk.com/SOWUH" target="_blank" class="body"><img class="inline" src="https://vk.com/images/favicon.ico" alt="vk.logo"> сообщество Вконтакте</a>
+</p>
+</article>
+</section>
 
 
-<div align=center id="Commission" style="display:none;">
-<div class="content" id="WARNING" align=center style="display:block;"><p1>BEWARE. There is NOT SAFE FOR WORK content on this page!<br><a href="javascript:NSFW('NSFW','WARNING')" class="body">Show anyway</a></p1></div>
-<div align=center id="NSFW" style="display:none;">
-<div class="content" id="ctr" align=center><p1>Can I draw for you? Sure!</p1></div>
-<div class="content" id="l" align=justify>
-<p1>
+<section id="WARNING" style="display:none;">
+<h2>BEWARE!</h2>
+<p style="text-align: center;">
+There is NOT SAFE FOR WORK content on this page!<br>
+<a href="javascript:changepage('Commission','WARNING','Index','About','Galleries')" class="body">Show anyway</a>
+</p>
+</section>
+
+
+<section id="Commission" style="display:none;">
+<h2>Can I draw for you? Sure!</h2>
+<p class="half">
 Base price of my work: $100<br>
 It's one character or any entity with the background.
-</p1>
-</div>
-<div class="content" id="r" align=center>
+</p>
+
+<p class="comm">
 <picture>
   <source srcset="./avif/comm/comm1.avif" type="image/AVIF">
   <source srcset="./img/comm/comm1.heic" type="image/heic">
   <source srcset="./webp/comm/comm1.webp" type="image/webp">
   <source srcset="./img/comm/comm1.jpf" type="image/jp2">
-  <img class="picex" src="./img/comm/comm1.png" alt="$100">
+  <img class="cooo" src="./img/comm/comm1.png" alt="$100">
 </picture>
-  <p4>$100 for any of these cuties</p4>
-</div>
-<div class="content" id="pl" align=center>
+  <br><br>$100 for any of these cuties</p>
+<p class="comm">
 <picture>
   <source srcset="./avif/comm/comm2.avif" type="image/AVIF">
   <source srcset="./img/comm/comm2.heic" type="image/heic">
   <source srcset="./webp/comm/comm2.webp" type="image/webp">
   <source srcset="./img/comm/comm2.jpf" type="image/jp2">
-  <img class="picex" src="./img/comm/comm2.png" alt="$150">
+  <img class="cooo" src="./img/comm/comm2.png" alt="$150">
 </picture>
-<p4>Oof. Looks like there is some sexual tension on this examples. Each of them costs $150.</p4>
-</div>
-<div class="content" id="tr" align=justify>
-<p1>If you want more than one character on your picture — it will cost +$50 for each.
-</p1>
-</div>
+<br><br>Oof. Looks like there is some sexual tension on this examples. Each of them costs $150.</p>
 
-<div class="content" id="ctr" align=center><hr><p1>What can affect base price?</p1></div>
-<div class="content" id="l" align=justify>
-<p1>My main goal with pricing is to make picture you want for the best price I can.<br>
+<p class="half">If you want more than one character on your picture — it will cost +$50 for each.</p>
+
+<hr>
+<article>
+<h2>What can affect base price?</h2>
+<p class="half">
+My main goal with pricing is to make picture you want for the best price I can.<br>
 But the complexity of drawing is a very subjective concept. In some cases, a seemingly simple picture can take a lot of time and effort and vice versa.
 It's hard to predict so in most cases base price will be best option.<br>
-</p1>
-</div>
-<div class="content" id="r" align=center>
+</p>
+
+<p class="comm">
 <picture>
   <source srcset="./avif/comm/comm3.avif" type="image/AVIF">
   <source srcset="./img/comm/comm3.heic" type="image/heic">
   <source srcset="./webp/comm/comm3.webp" type="image/webp">
   <source srcset="./img/comm/comm3.jpf" type="image/jp2">
-  <img class="picex" src="./img/comm/comm3.jpg" alt="closeup">
+  <img class="cooo" src="./img/comm/comm3.jpg" alt="closeup">
 </picture>
-</div>
-<div class="content" id="pl" align=center>
+</p>
+<p class="comm">
 <picture>
   <source srcset="./avif/comm/comm4.avif" type="image/AVIF">
   <source srcset="./img/comm/comm4.heic" type="image/heic">
   <source srcset="./webp/comm/comm4.webp" type="image/webp">
   <source srcset="./img/comm/comm4.jpf" type="image/jp2">
-  <img class="picex" src="./img/comm/comm4.png" alt="Лиля">
+  <img class="cooo" src="./img/comm/comm4.png" alt="Лиля">
 </picture>
-<p4>Also you can count on a discount if you want me to draw a fanart for some popular game/series/etc.</p4>
-</div>
-<div class="content" id="tr" align=justify>
-<p1>If you want a really simple picture or something epic/extremely detailed — it could affect the cost of my work both ways. We will discuss it and will look at all possible options.<br>
+Also you can count on a discount if you want me to draw a fanart for some popular game/series/etc.</p>
+
+<p class="half">
+If you want a really simple picture or something epic/extremely detailed — it could affect the cost of my work both ways. We will discuss it and will look at all possible options.<br>
 Pictures for printing or very high resolution require additional attention and could cost more.<br>
 I require no additional payment for two versions of one picture if differences are small. If you want more versions or/and pics vary much — additional payment starts from $10.<br>
-</p1>
-</div>
-<div class="content" id="ctr" align=center><hr><p1>Themes</p1></div>
-<div class="content" id="l" align=justify>
-<p1>I like to draw pin-ups and grimdark pictures. Elves, vampires, monsters etc. I love to draw new things and challenge myself with surprising tasks.<br>I'm open-minded enough not to refuse cool ideas because "this character was probably 17.5 years old on first season".<br>
+</p>
+
+</article>
+<hr>
+<article>
+<h2>Themes</h2>
+
+<p class="half">I like to draw pin-ups and grimdark pictures. Elves, vampires, monsters etc. I love to draw new things and challenge myself with surprising tasks.<br>I'm open-minded enough not to refuse cool ideas because "this character was probably 17.5 years old on first season".<br>
 However, I'm not interested in drawing violence and explict sexual themes when real children are involved.<br>I have nothing against drawing children, but let's keep them out of 18+ content.<br><br>
 
 Hard-core gore — nope, no way.<br>
-</p1>
-</div>
-<div class="content" id="r" align=center>
-<picture>
+</p>
+
+<p class="comm">
 <picture>
   <source srcset="./avif/comm/comm5.avif" type="image/AVIF">
   <source srcset="./img/comm/comm5.heic" type="image/heic">
   <source srcset="./webp/comm/comm5.webp" type="image/webp">
   <source srcset="./img/comm/comm5.jpf" type="image/jp2">
-  <img class="picex" src="./img/comm/comm5.jpg" alt="D.Va">
+  <img class="cooo" src="./img/comm/comm5.jpg" alt="D.Va">
 </picture>
-</picture>
-<p4>About other themes — very often it all depends on the context, so it will be easier to ask than try to make a taboo-list.</p4>
-</div>
-
-<div class="content" id="ctr" align=center><hr><p1>How does it work?</p1></div>
-<div class="content" id="pl" align=center>
+<br><br>About other themes — very often it all depends on the context, so it will be easier to ask than try to make a taboo-list.</p>
+</article>
+<hr>
+<article>
+<h2>How does it work?</h2>
+<p class="comm">
 <picture>
   <source srcset="./avif/comm/comm8.avif" type="image/AVIF">
   <source srcset="./img/comm/comm8.heic" type="image/heic">
   <source srcset="./webp/comm/comm8.webp" type="image/webp">
   <source srcset="./img/comm/comm8.jpf" type="image/jp2">
-  <img class="picex" src="./img/comm/comm8.jpg" alt="sketch">
+  <img class="cooo" src="./img/comm/comm8.jpg" alt="sketch">
 </picture>
-</div>
-<div class="content" id="tr" align=justify>
-<p1>SOWUH.art@gmail.com<br>
+</p>
+
+<p class="half">SOWUH.art@gmail.com<br>
 Mail me description of picture you want. Find some references — pics that describe your idea better than thousand words. I want them badly.<br>
 I'll ask you few questions to make sure I did get you right. After that I'll tell you how much it costs, how much time will it take (usually about a month) and send you PayPal invoice. I work only with fullprice prepay.<br>
 Your art will be in line at the moment you pay.
-</p1>
-</div>
-<div class="content" id="l" align=justify>
-<p1>I'll start developing sketch as soon as your turn comes. After it's ready I'll send sketch to you for approval.<br>
+</p>
+
+<p class="half">
+I'll start developing sketch as soon as your turn comes. After it's ready I'll send sketch to you for approval.<br>
 You welcome to make some edits on this stage before you give me green light to start making final picture.<br>
 When art is ready I'll send it to you and publish it.<br><br>
 We share copyrights for the final picture 50/50. That means that we both can do whatever we want with it. I can mention you or keep your identity secret — as you wish.
-</p1>
-</div>
-<div class="content" id="r" align=center>
+</p>
+
+<p class="comm">
 <picture>
   <source srcset="./avif/comm/comm6.avif" type="image/AVIF">
   <source srcset="./img/comm/comm6.heic" type="image/heic">
   <source srcset="./webp/comm/comm6.webp" type="image/webp">
   <source srcset="./img/comm/comm6.jpf" type="image/jp2">
-  <img class="picex" src="./img/comm/comm6.png" alt="al-bee-doh">
+  <img class="cooo" src="./img/comm/comm6.png" alt="al-bee-doh">
 </picture>
-</div>
+</p>
+</article>
+<br>
 
-
-<div class="content" id="ctr" align=center>
 <picture>
   <source srcset="./avif/comm/comm7.avif" type="image/AVIF">
   <source srcset="./img/comm/comm7.heic" type="image/heic">
   <source srcset="./webp/comm/comm7.webp" type="image/webp">
   <source srcset="./img/comm/comm7.jpf" type="image/jp2">
-  <img class="picex" src="./img/comm/comm7.jpg" alt="process">
+  <img class="cooo2" src="./img/comm/comm7.jpg" alt="process">
 </picture>
-<p1>SOWUH.art@gmail.com<br>
-Let's make some art together!</p1><br><p4>(or I will starve to death)</p4>
-</div>
-</div>
-</div>
+<p style="text-align: center;">SOWUH.art@gmail.com<br>
+Let's make some art together!</p><br><p class="comm" style="padding: 4%;">(or I will starve to death)</p>
 
-<div align=center id="About" style="display:none;">
-<div class="content" id="ctr" align=left>
-<p1><br>Site is too young. Something will appear here in the near future.
+</section>
+
+
+<section id="About" style="display:none;">
+<h2><br>Site is too young. Something will appear here in the near future.
 <br><br>
-</p1>
-</div>
-</div>
+</h2>
+
+</section>
+</main>
 
 
-</div>
-<div id="sole" class="gum" align=right>
-<div class="content" id="fu" align=right><p3>SOWUH.art@gmail.com<br>Follow me on <a href="http://twitter.com/SOWUHarts" class="footer" target="_blank">twitter</a>!<br>Designed in 2020</p3></div>
-</div>
+<footer id="sole" class="gum">
+<p class="fooo">SOWUH.art@gmail.com<br>Follow me on <a href="http://twitter.com/SOWUHarts" class="footer" target="_blank">twitter</a>!<br>Designed in 2020</p>
+</footer>
 </body>
 </html>
