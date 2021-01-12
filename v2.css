@@ -8,7 +8,6 @@ padding:0;
 background-color: #3b1d24;
 background-image: url("bg.png");
 image-rendering: -webkit-optimize-contrast;
-color-profile: url("http://www.color.org/profiles/sRGB2014.icc");
 text-rendering: optimizeLegibility;
 -webkit-font-smoothing: antialiased;
 -moz-osx-font-smoothing: grayscale;
@@ -29,11 +28,11 @@ a:visited {text-decoration: none;}
 a:hover {text-decoration: none;}
 a:active {text-decoration: none;}
 
-a.body {color: #d22e75;}
-a.body:link {color: #d22e75;}
+a.body {color: #d62d76;}
+a.body:link {color: #d62d76;}
 a.body:focus {color: white;}
-a.body:visited {color: #d22e75;}
-a.body:hover {color: white; text-shadow: 0 0 0.05em #d22e75, 0 0 0.25em white; transition: 0.2s linear;}
+a.body:visited {color: #d62d76;}
+a.body:hover {color: white; text-shadow: 0 0 0.05em #d62d76, 0 0 0.25em white; transition: 0.2s linear;}
 a.body:active {text-decoration: none; color: white; text-shadow: 0 0 0.3em white, 0 0 0.2em white; transition: 0.2s linear;}
 
 a.footer {color: #a6a9a6;}
