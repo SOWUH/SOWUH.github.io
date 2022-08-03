@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html prefix="og: http://ogp.me/ns#" lang="en">
 <head>
-<script src="https://www.w3counter.com/tracker.js?id=131584"></script>
 <meta charset="UTF-8">
 <title>SOWUH.art Artist's webpage</title>
 <meta property="og:site_name" content="SOWUH.art" />
@@ -15,7 +14,7 @@
 <meta property="og:image:type" content="image/png" />
 <meta property="og:description" content="My nickname is SOWUH and I kinda draw pictures. On this site you can find my contacts, read some info about me, etc." />
 <meta name="description" content="My nickname is SOWUH and I kinda draw pictures. On this site you can find my contacts, read some info about me, etc.">
-<link rel="stylesheet" type="text/css" href="v2.css" />
+<link rel="stylesheet" type="text/css" href="v3.css" />
 <link rel="stylesheet" type="text/css" href="fonts.css" />
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="manifest" href="./favicons/site.webmanifest">
@@ -25,20 +24,18 @@
 <meta name="msapplication-config" content="./favicons/browserconfig.xml">
 <meta name="theme-color" content="#d22e75">
 <script>
-function changepage(section1,section2,section3,section4,section5)
+function changepage(section1,section2,section3,section4)
 {
    d1 = document.getElementById(section1);
    d2 = document.getElementById(section2);
    d3 = document.getElementById(section3);
    d4 = document.getElementById(section4);
-   d5 = document.getElementById(section5);
    if( d1.style.display == "none" )
    {
       d1.style.display = "block";
       d2.style.display = "none";
 	  d3.style.display = "none";
 	  d4.style.display = "none";
-	  d5.style.display = "none";
    }
 }
 </script>
@@ -46,16 +43,45 @@ function changepage(section1,section2,section3,section4,section5)
 <body>
 <div id="cast"></div>
 <header id="topknot" class="gum">
-<a href="javascript:changepage('Index','About','Galleries','Commission','WARNING')">
+<a href="javascript:changepage('Index','About','Galleries','Commission')">
+
+<div id="CrossFade">
 <picture>
-  <source srcset="./img/avif/logo/logo.avif" type="image/AVIF">
-  <source srcset="./img/webp/logo/logo.webp" type="image/webp">
-  <source srcset="./img/jpf/logo/logo.jpf" type="image/jp2">
-  <img class="logo" src="./img/legacy/logo/logo.png" alt="SOWUH. CG Artist official site"></picture></a></header>
+  <source srcset="./img/avif/header/art/4.avif" type="image/AVIF">
+  <source srcset="./img/webp/header/art/4.webp" type="image/webp">
+  <source srcset="./img/jpf/header/art/4.jpf" type="image/jp2">
+  <img class="headart" src="./img/legacy/header/art/4.jpg"/>
+</picture>
+<picture>
+  <source srcset="./img/avif/header/art/2.avif" type="image/AVIF">
+  <source srcset="./img/webp/header/art/2.webp" type="image/webp">
+  <source srcset="./img/jpf/header/art/2.jpf" type="image/jp2">
+  <img class="headart" src="./img/legacy/header/art/2.jpg"/>
+</picture>
+<picture>
+  <source srcset="./img/avif/header/art/3.avif" type="image/AVIF">
+  <source srcset="./img/webp/header/art/3.webp" type="image/webp">
+  <source srcset="./img/jpf/header/art/3.jpf" type="image/jp2">
+  <img class="headart" src="./img/legacy/header/art/3.jpg"/>
+</picture>
+<picture>
+  <source srcset="./img/avif/header/art/1.avif" type="image/AVIF">
+  <source srcset="./img/webp/header/art/1.webp" type="image/webp">
+  <source srcset="./img/jpf/header/art/1.jpf" type="image/jp2">
+  <img class="headart" src="./img/legacy/header/art/1.jpg"/>
+</picture>
+<div class="head_size"></div> 
+</div>
+<picture>
+  <source srcset="./img/avif/header/logoz.avif" type="image/AVIF">
+  <source srcset="./img/webp/header/logoz.webp" type="image/webp">
+  <img class="logoz" src="./img/legacy/header/logoz.png" alt="SOWUH. CG Artist official site">
+</picture>
+</a></header>
 <nav id="muscle" class="gum">
-<h1 class="snap"><a href="javascript:changepage('Galleries','Index','Commission','About','WARNING')" class="menu">Galleries</a></h1>
-<h1 class="snap"><a href="javascript:changepage('WARNING','Commission','Galleries','Index','About')" class="menu">Commission</a></h1>
-<h1 class="snap"><a href="javascript:changepage('About','Galleries','Index','Commission','WARNING')" class="menu">About</a></h1>
+<h1 class="snap"><a href="javascript:changepage('Galleries','Index','Commission','About')" class="menu">Links</a></h1>
+<h1 class="snap"><a href="javascript:changepage('Commission','Galleries','Index','About')" class="menu">Commission</a></h1>
+<h1 class="snap"><a href="javascript:changepage('About','Galleries','Index','Commission')" class="menu">About</a></h1>
 </nav>
 <main id="clay" class="gum">
 
@@ -69,7 +95,7 @@ function changepage(section1,section2,section3,section4,section5)
   <source srcset="./img/jpf/up.jpf" type="image/jp2">
   <img class="logo" src="./img/legacy/up.png" alt="">
 </picture><br>
-My nickname is SOWUH and I draw pictures.<br><br>
+My nickname is SOWUH and I'm drawing pictures.<br><br>
 On this site you can find my contacts, read some info about me and even have a look at my commission terms.<br>
 Feel free to push some buttons.<br><br>
 <picture>
@@ -90,59 +116,202 @@ Feel free to push some buttons.<br><br>
 
 
 <section id="Galleries" style="display:none;">
-<h2>Follow me! I need you!</h2>
-<picture>
-  <source srcset="./img/avif/gal.avif" type="image/AVIF">
-  <source srcset="./img/webp/gal.webp" type="image/webp">
-  <source srcset="./img/jpf/gal.jpf" type="image/jp2">
-  <img class="picex" src="./img/legacy/gal.jpg" alt="Some thumbz">
-</picture>
-<article class="content">
-<h3>I have two main galleries:</h3>
-<p>
-<br><a href="http://artstation.com/SOWUH" target="_blank" class="body"><img class="inline" src="./icons/st.png" alt="Artst.logo"> Artstation</a>
-and<br>
-Second is closed, ha-ha
+<h2>My pages:</h2>
+
+<article style="text-align: center;" class="content">
+<p style="text-align: center;">
+<img class="inline" src="./icons/tw.png"><a href="http://twitter.com/SOWUH_sane" target="_blank" class="body"> twitter</a>
 <br><br>
-</p>
-<hr>
-<p>
-<br>Also you can find me and my pictures on twitter:<br>
-<a href="http://twitter.com/SOWUH_sane" target="_blank" class="body"><img class="inline" src="./icons/tw.png" alt="Twt.logo"> @SOWUH_sane</a>
+<img class="inline" src="./icons/st.png"><a href="http://artstation.com/SOWUH" target="_blank" class="body"> Artstation</a>
 <br><br>
-</p>
-<hr>
-<p>
-<br>И, конечно же, у меня есть<br> <a href="http://vk.com/SOWUH" target="_blank" class="body"><img class="inline" src="./icons/vk.png" alt="vk.logo"> сообщество Вконтакте</a>
+<img class="inline" src="./icons/hf.png"><a href="http://hentai-foundry.com/pictures/user/SOWUH" target="_blank" class="body"> Hentai Foundry</a>
+<br><br>
+<img class="inline" src="./icons/pixiv.png"><a href="http://www.pixiv.net/en/users/34131613" target="_blank" class="body"> Pixiv</a>
+<br><br>
+<img class="inline" src="./icons/vk.png"><a href="http://vk.com/SOWUH" target="_blank" class="body"> вконтакте</a>
+<br><br>
+<img class="inline" src="./icons/youtube.png"><a href="http://youtube.com/channel/UCWuopvRWc1fHm3nkHahpwxg" target="_blank" class="body"> YouTube</a>
+<br><br>
 </p>
 </article>
 </section>
 
 
-<section id="WARNING" style="display:none;">
-<p style="text-align: center;"><br>
-Commissions closed for the time being.<br>
-Write me if you have any questions.<br>
-SOWUH.art@gmail.com<br>
-For ones of you for whom I have already drawn for - don't hesitate to ask, no barriers for old friends!<br>
-</p>
-</section>
 <section id="Commission" style="display:none;">
+<h2>Commissions are OPEN!</h2>
+<p>Mail me! SOWUH.art@gmail.com</p><br><br>
+<p class="half">
+Pick with one character on simple background costs $75<br>
+</p>
+
+<p class="comm">
+<picture>
+  <source srcset="./img/avif/comm/Noelle.avif" type="image/AVIF">
+  <source srcset="./img/webp/comm/Noelle.webp" type="image/webp">
+  <source srcset="./img/jpf/comm/Noelle.jpf" type="image/jp2">
+  <img class="cooo" src="./img/legacy/comm/Noelle.jpg" alt="$75 girly">
+</picture>
+  <br>WATASHI WA OZOKUYO</p>
+<p class="comm">
+<picture>
+  <source srcset="./img/avif/comm/couple.avif" type="image/AVIF">
+  <source srcset="./img/webp/comm/couple.webp" type="image/webp">
+  <source srcset="./img/jpf/comm/couple.jpf" type="image/jp2">
+  <img class="cooo" src="./img/legacy/comm/couple.jpg" alt="$150 girliez">
+</picture>
+<br>Oof. Looks like we should give these two some space</p>
+
+<p class="half">For two characters on same picture price goes x2. Puf! And it's $150, like evil magic. For three characters this magic even darker! Price does x2 again! $300! And it will become even darker further with same insane trick! Be careful!</p>
+
+<hr>
+<article>
+<p class="half">
+If you have in mind something very specific and complex for the background of art it will add to price another $75<br>
+</p>
+
+<p class="comm">
+<picture>
+  <source srcset="./img/avif/comm/Albedo.avif" type="image/AVIF">
+  <source srcset="./img/webp/comm/Albedo.webp" type="image/webp">
+  <source srcset="./img/jpf/comm/Albedo.jpf" type="image/jp2">
+  <img class="cooo" src="./img/legacy/comm/Albedo.jpg" alt="Albedo?!">
+</picture>
+<br>The Supreme One ordered me to stay here "until someone commissions SFW art with a detailed background". Not that I'm aware of what that means.
+</p>
+<hr>
+<p class="comm">
+<picture>
+  <source srcset="./img/avif/comm/WWBv2.avif" type="image/AVIF">
+  <source srcset="./img/webp/comm/WWBv2.webp" type="image/webp">
+  <source srcset="./img/jpf/comm/WWBv2.jpf" type="image/jp2">
+  <img class="cooo" src="./img/legacy/comm/WWBv2.jpg" alt="Princess Diana">
+</picture>
+<br>No comics here, only you and me, sweety</p>
+
+<p class="half">
+People are always asking me if I know Tyler Durden and what my rates for comics.<br>
+I can answer the last one: count price for every frame of your comics as a separate picture! Yeah, dark magic again!
+</p>
+
+<hr>
+<article>
+<h2>Result may vary</h2>
+
+<p class="half">You should know I'm one of those artists who doesn't fixed on one style with predictable results. Every time I search for most suitable style for each drawing individualy.<br>
+If you want something specific, better show me an example and say: “I want my art to look like this!”, there is no problem with that. Or you can rely on my vision and enjoy the surprise.<br>
+Anyhow, I want you to show me some references — pics that describe your idea better than thousand words.<br>
+</p>
+
+<p class="comm">
+<picture>
+  <source srcset="./img/avif/comm/JustJul.avif" type="image/AVIF">
+  <source srcset="./img/webp/comm/JustJul.webp" type="image/webp">
+  <source srcset="./img/jpf/comm/JustJul.jpf" type="image/jp2">
+  <img class="cooo" src="./img/legacy/comm/JustJul.jpg" alt="Renaissance">
+</picture>
+<br>"Please just draw it normally!"<br>"What do you mean?"
+</p>
+</article>
+<hr>
+<article>
+<h2>Rules</h2>
+<p class="comm">
+<picture>
+  <source srcset="./img/avif/comm/CZ2128.avif" type="image/AVIF">
+  <source srcset="./img/webp/comm/CZ2128.webp" type="image/webp">
+  <source srcset="./img/jpf/comm/CZ2128.jpf" type="image/jp2">
+  <img class="cooo" src="./img/legacy/comm/CZ2128.jpg" alt="Shizu">
+</picture>
+  <br>Works like clockwork for many years!
+</p>
+
+<p class="half">
+It usually looks like this:<br>
+You write to me, we discuss your idea and agree on a price and terms. Immediately after payment, your drawing is in the queue.<br>
+When it's your turn, I'll draw a sketch and send it to you for approval.<br>
+Once approved, I work the magic and finish the art. In the hope that you will like the result, I send it to you and publish it for everyone.<br>
+</p>
+
+<p class="half">
+<br>
+Commission works only with full prepay, I can not do exceptions.<br><br>
+I don't do privates, I'm only open for arts that I can post.<br><br>
+Changes at the sketch stage are welcome and free.<br><br>
+The final picture belongs to us 50/50, we can both do whatever we want with it.
+</p>
+
+<p class="comm">
+<picture>
+  <source srcset="./img/avif/comm/SOWUHs_Jack.avif" type="image/AVIF">
+  <source srcset="./img/webp/comm/SOWUHs_Jack.webp" type="image/webp">
+  <source srcset="./img/jpf/comm/SOWUHs_Jack.jpf" type="image/jp2">
+  <img class="cooo" src="./img/legacy/comm/SOWUHs_Jack.jpg" alt="Hit the Road Jack">
+</picture>
+</p>
+</article>
+<br>
+
+<picture>
+  <source srcset="./img/avif/comm/progress_cenz.avif" type="image/AVIF">
+  <source srcset="./img/webp/comm/progress_cenz.webp" type="image/webp">
+  <source srcset="./img/jpf/comm/progress_cenz.jpf" type="image/jp2">
+  <img class="cooo2" src="./img/legacy/comm/progress_cenz.jpg" alt="process">
+</picture>
+<p style="text-align: center;">SOWUH.art@gmail.com<br>
+Let's make some art together!</p><br><p class="comm" style="padding: 4%;">Or I won't be able to lie to my folks that I'm a real artist working for real money.<br>Do you really want to upset them? :(</p>
+
 </section>
 
 
 <section id="About" style="display:none;">
-<h2><br>Site is too young. Something will appear here in the near future.
-<br><br>
-<video src="./img/lilya.mp4"  width="50%" muted autoplay loop playsinline></video>
-</h2>
+<h2>So. Some info about me?</h2>
+<article>
+<p class="comm">
+<video class="cooo" width="80%" muted autoplay loop playsinline>
+<source src="./img/lilya_render2.mp4" type='video/mp4; codec="avc1.64001F"'>
+</video>
+  <br> <br> <br>
+</p>
+
+<p class="half">
+I have been a commission artist since 2017. What can I say? I am stuck with drawing and drawing is stuck with me. There have been many other paths and attempts in my life, but... In the end if one day I can't draw, I'll just die miserable. :(<br><br>
+Jokes apart, I'm open for your questions, suggestions and job offers.
+<br>Best way to contact me is Email: SOWUH.art@gmail.com<br>
+</p>
+
+<p class="half">
+<br>
+If I had great achievements, they would all be described below.<br>
+But I have none of them! So... how about some random facts?<br><br>
+
+My strange nickname comes from the old days when I was captured by DOTA2 and it is a funny written slav's slang name for "Wildwing Ripper" forest monster from this game. Basicaly SOWUH means "Owl". I guess it's still suits me well, because not only I am a creep, I also rarely sleep at night.<br>
+Some things never change.<br><br>
+
+I am often accused that my drawings are too gloomy, but I do not understand what it is about.<br><br>
+
+I don't like tomatoes.<br><br>
+
+For more than two years I have been thinking about what to write in this section of the site and this is the best thing I managed to do.
+</p>
+
+<p class="comm">
+<picture>
+  <source srcset="./img/avif/about/process.avif" type="image/AVIF">
+  <source srcset="./img/webp/about/process.webp" type="image/webp">
+  <source srcset="./img/jpf/about/process.jpf" type="image/jp2">
+  <img class="cooo" src="./img/legacy/about/process.jpg">
+</picture>
+</p>
+</article>
+
+
 
 </section>
 </main>
 
 
 <footer id="sole" class="gum">
-<p class="fooo">SOWUH.art@gmail.com<br>Follow me on <a href="https://www.artstation.com/sowuh" class="footer" target="_blank">artstation</a>!<br>© 2020-2022</p>
+<p class="fooo">SOWUH.art@gmail.com<br>You can support me on <a href="https://boosty.to/sowuh" class="footer" target="_blank">boosty</a>!<br>© 2020-2022</p>
 </footer>
 </body>
 </html>
