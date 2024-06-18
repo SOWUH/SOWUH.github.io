@@ -316,10 +316,8 @@ img.picex{
   left: 0.6em;
   width: 22%;
   padding: 2%;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
    opacity: 0.6;
-		  z-index: 4;
+   z-index: 4;
   -webkit-animation: LogoDist 36s infinite;
 }
 .logozG {
@@ -329,16 +327,11 @@ img.picex{
   width: 22%;
   padding: 2%;
   mix-blend-mode: luminosity;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  		   filter: blur(1rem);
-   -webkit-filter: blur(1rem);
-   opacity: 0.4;
-   z-index: 3;
-  -webkit-animation: LogoGlowDist 36s infinite;
+  opacity: 0;
+  z-index: 3;
 }
 #topknot:hover .logoz {
-  z-index: 9;
+ z-index: 9;
  opacity: 1;
  	      filter: blur(0rem) brightness(0);
   -webkit-filter: blur(0rem) brightness(0);
@@ -385,8 +378,8 @@ img.picex{
  -webkit-filter: hue-rotate(0deg) brightness(0.4) blur(0.05rem);
   }
   20% {
-    -webkit-transform: scale(1.0);
-            transform: scale(1.0);
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
   }
    25% {
 	       filter: hue-rotate(90deg) brightness(0.7) blur(0.02rem);
@@ -417,44 +410,6 @@ img.picex{
             transform: scale(1.1);
 	       filter: hue-rotate(359deg) brightness(0.4) blur(0.05rem);
    -webkit-filter: hue-rotate(359deg) brightness(0.4) blur(0.05rem);
-  }
-}
-@-webkit-keyframes LogoGlowDist {
-  20% {
-    -webkit-transform: scale(1.0);
-            transform: scale(1.0);
-  }
-  41% {
-    -webkit-transform: scale(0.9);
-            transform: scale(0.9);
-  }
-  61% {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-  }
-  81% {
-    -webkit-transform: scale(1.0);
-            transform: scale(1.0);
-  }
-  100% {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-  }
-  25% {
-    	   filter: blur(2rem);
-   -webkit-filter: blur(2rem);
-  }
-  45% {
-    	   filter: blur(0.6rem);
-   -webkit-filter: blur(0.6rem);
-  }
-  65% {
-    	   filter: blur(1.2rem);
-   -webkit-filter: blur(1.2rem);
-  }
-  85% {
-    	   filter: blur(2rem);
-   -webkit-filter: blur(2rem);
   }
 }
 img.headart{
