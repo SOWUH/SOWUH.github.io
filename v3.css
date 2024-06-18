@@ -326,7 +326,7 @@ img.picex{
   left: 0.6em;
   width: 22%;
   padding: 2%;
-  mix-blend-mode: luminosity;
+  mix-blend-mode: lighten;
   opacity: 0;
   z-index: 3;
 }
