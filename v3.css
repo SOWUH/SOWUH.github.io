@@ -129,6 +129,7 @@ article {
 	display: block;
 }
 p {
+	text-indent: 1rem;
 	font-weight: normal;
 	font-size: 0.9em;
 	color: #301e20;
@@ -302,8 +303,8 @@ img.picex{
 	display: inline-block;
 	vertical-align: middle;
 	padding: 3%;
-	width: 47%;
-	text-align: left;
+	width: 90%;
+	text-align: center;
 }
  /* all of further is for head */
 .head_size {
