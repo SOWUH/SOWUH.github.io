@@ -142,10 +142,12 @@ p {
 	padding: 0.4%;
 }
 p.half {
+	text-indent: 0rem;
 	padding: 4%;
 	width: 47%;
 }
 p.comm {
+	text-indent: 0rem;
 	width: 50.5%;
 	font-size: 0.7em;
 	color: #301e20;
@@ -154,6 +156,7 @@ p.comm {
 	padding: 0;
 }
 p.fooo {
+	text-indent: 0rem;
 	color: #757373;
 	font-size: 0.6em;
 	text-align: right;
@@ -188,6 +191,9 @@ p.fooo {
 		margin-right:auto;
 		min-width: 300px;
 	}
+	#topknot{
+		aspect-ratio: 180 / 106;
+	}
 }
 #topknot{
 background: #a6c6c0;
@@ -207,6 +213,8 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#bcf4e7",endCo
 		-moz-user-select: none;
 		-ms-user-select: none;
 		user-select: none;
+		aspect-ratio: 22 / 9;
+		min-height: 10.5em;
 	}
 #clay{
 background: #a6c6c0;
@@ -307,10 +315,6 @@ img.picex{
 	text-align: center;
 }
  /* all of further is for head */
-.head_size {
-  margin: 6.1em;
-  position: relative;
-}
 .logoz {
   position: absolute;
   bottom: 0.1em;
@@ -433,15 +437,6 @@ img.headart{
   overflow: hidden;
   align-items: center;
   justify-content: center;
-}
-
-#PrlxL0 {
-  position: relative;
-}
-
-#PrlxL1,
-#PrlxL2,
-#PrlxL3 {
   position: absolute;
   top: 0;
   left: 0;
@@ -509,8 +504,8 @@ img.headart{
 #PrlxL2 picture {
   -webkit-transform: scale(2.5) rotate(8deg) translate(-2rem, -2rem);
           transform: scale(2.5) rotate(8deg) translate(-2rem, -2rem);
-		   filter: blur(0.16rem);
-   -webkit-filter: blur(0.16rem);
+		   filter: blur(0.2rem);
+   -webkit-filter: blur(0.2rem);
   -webkit-animation: PrlxL2 90s infinite;
           animation: PrlxL2 90s infinite;
 		  z-index: 6;
@@ -630,8 +625,8 @@ img.headart{
     opacity: 0;
 	    -webkit-transform: scale(1.02) rotate(0) translate(0);
             transform: scale(1.02) rotate(0) translate(0);
-	-webkit-filter: blur(0.1rem);
-		    filter: blur(0.1rem);
+	-webkit-filter: blur(0.15rem);
+		    filter: blur(0.15rem);
   }
 }
 @keyframes PrlxL3 {
@@ -645,7 +640,7 @@ img.headart{
     opacity: 0;
 	    -webkit-transform: scale(1.02) rotate(0) translate(0);
             transform: scale(1.02) rotate(0) translate(0);
-	-webkit-filter: blur(0.1rem);
-		    filter: blur(0.1rem);
+	-webkit-filter: blur(0.15rem);
+		    filter: blur(0.15rem);
   }
 }
