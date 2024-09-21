@@ -5,6 +5,7 @@ Disallow: /img/legacy/header/prlx/
 Disallow: /img/webp/header/
 Disallow: /img/webp/header/prlx/
 Disallow: /img/avif/header/
+Disallow: /img/avif/header/prlx/
 Disallow: /favicons/
 Disallow: /icons/
 Disallow: /prom/
