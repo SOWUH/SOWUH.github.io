@@ -1,1 +1,11 @@
 Sitemap: https://sowuh.art/sitemap.txt
+User-agent: *
+Disallow: /img/legacy/header/
+Disallow: /img/legacy/header/prlx/
+Disallow: /img/webp/header/
+Disallow: /img/webp/header/prlx/
+Disallow: /img/avif/header/
+Disallow: /favicons/
+Disallow: /icons/
+Disallow: /prom/
+Disallow: /test/
