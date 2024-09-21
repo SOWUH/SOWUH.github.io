@@ -14,12 +14,13 @@
 <meta property="og:image:type" content="image/png" />
 <meta property="og:description" content="My nickname is SOWUH and I am 2D artist. On this site you can find my contacts, read some info about me, etc." />
 <meta name="description" content="My nickname is SOWUH and I am 2D artist. On this site you can find my contacts, read some info about me, etc.">
-<link rel="stylesheet" type="text/css" href="v3.css" />
+<link rel="stylesheet" type="text/css" href="v4.css" />
 <link rel="stylesheet" type="text/css" href="fonts.css" />
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="manifest" href="./favicons/site.webmanifest">
 <link rel="mask-icon" href="./favicons/safari-pinned-tab.svg" color="#3b1d24">
-<link rel="shortcut icon" href="favicon.png" type="image/png">
+<link rel="icon" href="favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 <meta name="msapplication-TileColor" content="#a6c6c0">
 <meta name="msapplication-config" content="./favicons/browserconfig.xml">
 <meta name="theme-color" content="#d22e75">
@@ -216,9 +217,39 @@ Let's create something beautiful together!</p><br><br>
 
 <section id="Commission" style="display:none;">
 <h2>Commissions are OPEN!</h2>
-<p>Mail me! SOWUH.art@gmail.com</p><br><br>
+<p>Mail me! SOWUH.art@gmail.com</p>
+<article class="comm-calc">
+    <h2>Price Calculator</h2>
+    <label for="quantity">Characters on picture:</label>
+    <input type="number" id="quantity" name="quantity" min="1" value="1"><br>
+    <div class="checkbox-wrapper-42">     
+        <input type="checkbox" id="additional" name="additional">
+        <label class="cbx" for="additional"></label>
+        <label class="lbl" for="additional">Detailed background</label><br>
+    </div>       
+    <p id="result">SORRY SCRIPT BROKEN</p>
+</article>
+<br><br>
+<script>
+    function calculateCost() {
+        let quantity = parseInt(document.getElementById('quantity').value);
+        let additional = document.getElementById('additional').checked;
+        let basePrice = 90;
+        
+        let totalCost = basePrice * Math.pow(2, quantity - 1);
+        if (additional) {
+            totalCost += basePrice;
+        }
+
+        document.getElementById('result').textContent = `Cost: €${totalCost}`;
+    }
+
+    document.getElementById('quantity').addEventListener('input', calculateCost);
+    document.getElementById('additional').addEventListener('change', calculateCost);
+    calculateCost();
+</script>
 <p class="half">
-Pick with one character on simple background costs €80<br>
+Pick with one character on simple background costs €90<br>
 </p>
 
 <p class="comm">
@@ -226,7 +257,7 @@ Pick with one character on simple background costs €80<br>
   <source srcset="./img/avif/comm/Noelle.avif" type="image/AVIF">
   <source srcset="./img/webp/comm/Noelle.webp" type="image/webp">
   <source srcset="./img/jpf/comm/Noelle.jpf" type="image/jp2">
-  <img class="cooo" src="./img/legacy/comm/Noelle.jpg" alt="€75 girly">
+  <img class="cooo" src="./img/legacy/comm/Noelle.jpg" alt="€90 girly">
 </picture>
   <br>WATASHI WA OZOKUYO</p>
 <p class="comm">
@@ -234,11 +265,11 @@ Pick with one character on simple background costs €80<br>
   <source srcset="./img/avif/comm/couple.avif" type="image/AVIF">
   <source srcset="./img/webp/comm/couple.webp" type="image/webp">
   <source srcset="./img/jpf/comm/couple.jpf" type="image/jp2">
-  <img class="cooo" src="./img/legacy/comm/couple.jpg" alt="€150 girliez">
+  <img class="cooo" src="./img/legacy/comm/couple.jpg" alt="€180 girliez">
 </picture>
 <br>Oof. Looks like we should give these two some space</p>
 
-<p class="half">For two characters on same picture price goes x2. Puf! And it's €160, like evil magic. For three characters this magic even darker! Price does x2 again! €320! And it will become even darker further with same insane trick! Be careful!</p>
+<p class="half">For two characters on same picture price goes x2. Puf! And it's €180, like evil magic. For three characters this magic even darker! Price does x2 again! €360! And it will become even darker further with same insane trick! Be careful!</p>
 
 <hr>
 <article>
