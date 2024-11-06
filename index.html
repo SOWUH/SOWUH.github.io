@@ -264,17 +264,23 @@ Let's create something beautiful together!</p><br><br>
 <article class="comm-calc">
     <h2>Price Calculator</h2>
     <label for="quantity">Characters on picture:</label>
-	
-	<div class="number">
-	<button class="number-minus" type="button" onclick="this.nextElementSibling.value = Math.max(1, parseInt(this.nextElementSibling.value) - 1); calculateCost();">-</button>
-	<input type="number" id="quantity" name="quantity" min="1" value="1" max="6" readonly>
-	<button class="number-plus" type="button" onclick="this.previousElementSibling.value = Math.min(6, parseInt(this.previousElementSibling.value) + 1); calculateCost();">+</button>
-	</div>
-	
+    
+    <div class="number">
+        <button class="number-minus" type="button" onclick="this.nextElementSibling.value = Math.max(1, parseInt(this.nextElementSibling.value) - 1); calculateCost();">-</button>
+        <input type="number" id="quantity" name="quantity" min="1" value="1" max="6" readonly>
+        <button class="number-plus" type="button" onclick="this.previousElementSibling.value = Math.min(6, parseInt(this.previousElementSibling.value) + 1); calculateCost();">+</button>
+    </div>
+    
     <div class="checkbox-wrapper-42">     
         <input type="checkbox" id="additional" name="additional">
         <label class="cbx" for="additional"></label>
         <label class="lbl" for="additional">Complex background</label><br>
+    </div>
+    
+    <div class="checkbox-wrapper-42">     
+        <input type="checkbox" id="portrait" name="portrait">
+        <label class="cbx" for="portrait"></label>
+        <label class="lbl" for="portrait">Portrait</label><br>
     </div>       
     <p id="result">SORRY SCRIPT BROKEN</p>
 </article>
@@ -283,18 +289,29 @@ Let's create something beautiful together!</p><br><br>
     function calculateCost() {
         let quantity = parseInt(document.getElementById('quantity').value);
         let additional = document.getElementById('additional').checked;
+        let portrait = document.getElementById('portrait').checked;
         let basePrice = 90;
-        
-        let totalCost = basePrice * Math.pow(2, quantity - 1);
-        if (additional) {
-            totalCost += basePrice;
-        }
 
-        document.getElementById('result').textContent = `Cost: €${totalCost}`;
+        if (portrait) {
+            document.getElementById('quantity').value = 1;
+            document.getElementById('quantity').setAttribute('readonly', true);
+            document.getElementById('quantity').style.backgroundColor = '#a5a5a4'; // Gray out
+            totalCost = basePrice * 0.66;
+        } else {
+            totalCost = basePrice * Math.pow(2, quantity - 1);
+            document.getElementById('quantity').removeAttribute('readonly');
+            document.getElementById('quantity').style.backgroundColor = '';
+        }
+		if (additional) {
+                totalCost += basePrice;
+        }
+		totalCost = Math.ceil(totalCost);
+        document.getElementById('result').textContent = `Cost: €${totalCost.toFixed(0)}`;
     }
 
     document.getElementById('quantity').addEventListener('input', calculateCost);
     document.getElementById('additional').addEventListener('change', calculateCost);
+    document.getElementById('portrait').addEventListener('change', calculateCost);
     calculateCost();
 </script>
 <p class="half">
