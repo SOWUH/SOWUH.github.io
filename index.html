@@ -25,68 +25,13 @@
 <meta name="msapplication-config" content="./favicons/browserconfig.xml">
 <meta name="theme-color" content="#d22e75">
 <script>
-  let sections = null;
-
-  function getSections() {
-    if (!sections) {
-      sections = document.querySelectorAll('main > section');
-    }
-    return sections;
-  }
-
-  function changepage(showId, push = true) {
-    const secs = getSections();
-    let targetSection = null;
-
-    secs.forEach(sec => {
-      if (sec.id === showId) {
-        sec.style.display = 'block';
-        targetSection = sec;
-      } else {
-        sec.style.display = 'none';
-      }
+function changepage(showId) {
+    const sections = document.querySelectorAll('main > section');
+    sections.forEach(sec => {
+        sec.style.display = (sec.id === showId) ? 'block' : 'none';
     });
-
-    if (!targetSection) {
-      console.warn(`Section "${showId}" not found. Falling back to 'Index'.`);
-      return changepage('Index', push);
-    }
-
-    if (push) {
-      history.pushState({ section: showId }, '', `#${showId}`);
-    }
-
-    if (targetSection) {
-      targetSection.setAttribute('tabindex', '-1');
-      targetSection.focus({ preventScroll: true });
-      targetSection.removeAttribute('tabindex');
-    }
-  }
-
-  window.addEventListener('popstate', event => {
-    const id = event.state?.section || location.hash.slice(1) || 'Index';
-    changepage(id, false);
-  });
-
-  history.scrollRestoration = 'manual';
-
-  addEventListener('DOMContentLoaded', () => {
-    if (location.hash) {
-      setTimeout(() => {
-        window.scrollTo(0, 0);
-      }, 1);
-    }
-  
-    const initialId = location.hash.slice(1) || 'Index';
-    changepage(initialId, false);
-    window.scrollTo({ top: 0, behavior: 'instant' });
-  });
-
-  window.addEventListener('hashchange', () => {
-    window.scrollTo({ top: 0, behavior: 'instant' });
-  });
+}
 </script>
-
 </head>
 <body>
 <div id="cast"></div>
