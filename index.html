@@ -25,26 +25,35 @@
 <meta name="msapplication-config" content="./favicons/browserconfig.xml">
 <meta name="theme-color" content="#d22e75">
 <script>
-function changepage(section1,section2,section3,section4)
-{
-   d1 = document.getElementById(section1);
-   d2 = document.getElementById(section2);
-   d3 = document.getElementById(section3);
-   d4 = document.getElementById(section4);
-   if( d1.style.display == "none" )
-   {
-      d1.style.display = "block";
-      d2.style.display = "none";
-	  d3.style.display = "none";
-	  d4.style.display = "none";
-   }
+function changepage(showId, push = true) {
+  document.querySelectorAll('main > section').forEach(sec => {
+    sec.style.display = sec.id === showId ? 'block' : 'none';
+  });
+
+  if (push) {
+    history.pushState({ section: showId }, '', `#${showId}`);
+  }
 }
+
+window.addEventListener('popstate', event => {
+  const id = event.state?.section || location.hash.slice(1) || 'Index';
+  changepage(id, false);
+});
+
+history.scrollRestoration = 'manual';
+
+addEventListener('DOMContentLoaded', () => {
+  const initialId = location.hash.slice(1) || 'Index';
+  changepage(initialId, false);
+  scrollTo({ top: 0, behavior: 'instant' });
+});
 </script>
+
 </head>
 <body>
 <div id="cast"></div>
 <header id="topknot" class="gum">
-<a href="javascript:changepage('Index','About','Galleries','Commission')">
+<a href="javascript:changepage('Index')">
 <div id="PrlxL0">
 <picture>
 <!-- Humanity is not yet ready for such high quality
@@ -209,9 +218,9 @@ function changepage(section1,section2,section3,section4)
 </picture>
 </a></header>
 <nav id="muscle" class="gum">
-<h1 class="snap"><a href="javascript:changepage('Galleries','Index','Commission','About')" class="menu">Links</a></h1>
-<h1 class="snap"><a href="javascript:changepage('Commission','Galleries','Index','About')" class="menu">Commission</a></h1>
-<h1 class="snap"><a href="javascript:changepage('About','Galleries','Index','Commission')" class="menu">About</a></h1>
+<h1 class="snap"><a href="javascript:changepage('Galleries')" class="menu">Links</a></h1>
+<h1 class="snap"><a href="javascript:changepage('Commission')" class="menu">Commission</a></h1>
+<h1 class="snap"><a href="javascript:changepage('About')" class="menu">About</a></h1>
 </nav>
 <main id="clay" class="gum">
 
